@@ -1,0 +1,5 @@
+/dragonfly
+/SFML-2.5
+/.vs
+/game0/vs-2019/.vs
+/game0/vs-2019/x64
