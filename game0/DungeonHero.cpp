@@ -33,7 +33,7 @@ DungeonHero::DungeonHero() {
 	//set init variables
 	fire_slowdown = 15;
 	fire_countdown = fire_slowdown;
-	move_slowdown = 1;
+	move_slowdown = 2;
 	move_countdown = move_slowdown;
 	hp = 100;
 	ammo = 20;

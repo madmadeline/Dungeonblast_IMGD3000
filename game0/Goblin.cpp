@@ -6,7 +6,7 @@
 #include "DisplayManager.h"
 #include <stdlib.h>
 
-Goblin::Goblin() {
+/*Goblin::Goblin() {
 	setType("Goblin");
 	//setVelocity(df::Vector(-0.25, 0));
 
@@ -14,6 +14,19 @@ Goblin::Goblin() {
 	//df::Vector p(48, WM.getBoundary().getVertical() / 2);
 	df::Vector p(9, 32);
 	setPosition(p);
+
+	registerInterest(df::COLLISION_EVENT);
+	hp = 12;
+}*/
+
+Goblin::Goblin(int x, int y) {
+	setType("Goblin");
+	//setVelocity(df::Vector(-0.25, 0));
+
+	//set init position
+	//df::Vector p(48, WM.getBoundary().getVertical() / 2);
+	//df::Vector p(9, 32);
+	setPosition(df::Vector(x, y));
 
 	registerInterest(df::COLLISION_EVENT);
 	hp = 12;

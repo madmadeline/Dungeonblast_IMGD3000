@@ -16,7 +16,7 @@
 #include "WorldManager.h"
 
 void loadResources(void) {
-    RM.loadSprite("Sprites/map-test.txt", "MapTest");
+    RM.loadSprite("Sprites/map2.txt", "MapTest");
     RM.loadSprite("Sprites/hero-spr.txt", "Hero");
 }
 
@@ -45,16 +45,24 @@ int main(int argc, char *argv[]) {
   // Set flush of logfile during development (when done, make false).
   LM.setFlush(true);
 
+  // initialize game world objs:
+  // map
   GAME_MAP.getInstance();
+
+  // player
   DungeonHero* hero = new DungeonHero;
   WM.setViewFollowing(hero);
-  new Goblin;
-  df::Vector p(12, WM.getBoundary().getVertical() / 2);
-  df::Vector p2(72, WM.getBoundary().getVertical() / 2);
-  df::Vector p3(50, WM.getBoundary().getVertical() / 3);
-  new BulletPickup(p);
-  new FireballPickup(p2);
-  new HealthPickup(p3);
+
+  // some enemies
+  new Goblin(9, 32);
+  new Goblin(21, 27);
+  new Goblin(28, 47);
+  new Goblin(37, 39);
+
+  // some pickups
+  new BulletPickup(df::Vector(15, 33));
+  new FireballPickup(df::Vector(9, 38));
+  new HealthPickup(df::Vector(21, 31));
 
   //view objects
   df::ViewObject* vo_hp = new df::ViewObject; //health counter

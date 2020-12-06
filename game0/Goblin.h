@@ -9,7 +9,8 @@ private:
 	void hit(const df::EventCollision* p_c);
 	int hp;
 public:
-	Goblin();
+	//Goblin();
+	Goblin(int x, int y);
 	~Goblin();
 	int eventHandler(const df::Event* p_e);
 };
