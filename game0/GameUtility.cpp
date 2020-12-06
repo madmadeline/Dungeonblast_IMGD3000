@@ -1,6 +1,7 @@
-/*#include "WorldManager.h"
+#include "WorldManager.h"
 #include "Map.h"
-#include "Utility.h"
+
+#include "GameUtility.h"
 
 bool checkOverlapMap(df::Object* p_o, df::Vector new_pos) {
 	// should result in box_pos being top left of object's sprite
@@ -16,13 +17,13 @@ bool checkOverlapMap(df::Object* p_o, df::Vector new_pos) {
 	int map_w = GAME_MAP.getAnimation().getSprite()->getFrame(0).getWidth();
 
 	for (int i = box_x; i < (box_x + box_w); i++) {
-		for (int j = box_y-1; j < (box_y + box_h); j++) {
+		for (int j = box_y-1; j < (box_y + box_h -1); j++) {
 			char c = map_str[i + (j * map_w)];
 			if (c != ' ') {
 				return true;
 			}
 		}
 	}
+	return false;
 }
 
-*/

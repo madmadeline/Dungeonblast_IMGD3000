@@ -11,9 +11,12 @@
 #include "Bullet.h"
 #include "Fireball.h"
 
+#include "GameUtility.h"
+
 //CONSTRUCTOR
 DungeonHero::DungeonHero() {
 	setType("Hero");
+	setSprite("Hero");
 
 	//register interests
 	registerInterest(df::KEYBOARD_EVENT);
@@ -22,7 +25,8 @@ DungeonHero::DungeonHero() {
 	registerInterest(df::COLLISION_EVENT);
 
 	//set init position
-	df::Vector p(42, WM.getBoundary().getVertical() / 2);
+	//df::Vector p(42, WM.getBoundary().getVertical() / 2);
+	df::Vector p(6, 43);
 	setPosition(p);
 
 	//set init variables
@@ -42,7 +46,7 @@ DungeonHero::DungeonHero() {
 
 //DESTRUCTOR
 DungeonHero::~DungeonHero(){
-
+	GM.setGameOver(true);
 }
 
 //EVENT HANDLER
@@ -74,13 +78,20 @@ int DungeonHero::eventHandler(const df::Event* p_e){
 
 // DRAW 
 int DungeonHero::draw() {
-	return DM.drawCh(getPosition(), 'H', df::BLUE);
+	//return DM.drawCh(getPosition(), 'H', df::BLUE);
+	return Object::draw();
 }
 
 //KEYBOARD STUFF
 void DungeonHero::kbd(const df::EventKeyboard* p_keyboard_event){
 
 	switch (p_keyboard_event->getKey()) {
+
+	case df::Keyboard::Q:  // Q quits to start menu
+		if (p_keyboard_event->getKeyboardAction() == df::KEY_PRESSED)
+			WM.markForDelete(this);
+		break;
+
 	case df::Keyboard::W:       // up
 		if (p_keyboard_event->getKeyboardAction() == df::KEY_DOWN)
 			currentDir = 1;
@@ -130,9 +141,14 @@ void DungeonHero::move(int dir){
 
 	// If stays on window, allow move.
 	df::Vector new_pos(getPosition().getX(), getPosition().getY() + dir);
-	/*if ((new_pos.getY() > 3) &&
+
+	if (checkOverlapMap(this, new_pos) == true) {
+		return;	// overlaps, doesn't move, else continue
+	}
+
+	if ((new_pos.getY() > -1) &&
 		(new_pos.getY() < WM.getBoundary().getVertical() - 1))
-		WM.moveObject(this, new_pos);*/
+		WM.moveObject(this, new_pos);
 	WM.moveObject(this, new_pos);
 }
 
@@ -145,7 +161,12 @@ void DungeonHero::advance(int dir) {
 
 	// If stays on window, allow move.
 	df::Vector new_pos(getPosition().getX() + dir, getPosition().getY());
-	if ((new_pos.getX() > 3) &&
+
+	if (checkOverlapMap(this, new_pos) == true) {
+		return;	// overlaps, doesn't move, else continue
+	}
+
+	if ((new_pos.getX() > -1) &&
 		(new_pos.getX() < WM.getBoundary().getHorizontal() - 1))
 		WM.moveObject(this, new_pos);
 }

@@ -12,7 +12,8 @@
 #include "WorldManager.h"
 
 void loadResources(void) {
-    RM.loadSprite("Sprites/map-char.txt", "MapTest");
+    RM.loadSprite("Sprites/map-test.txt", "MapTest");
+    RM.loadSprite("Sprites/hero-spr.txt", "Hero");
 }
 
 int main(int argc, char *argv[]) {
@@ -25,22 +26,22 @@ int main(int argc, char *argv[]) {
   }
   
   // setting world to be size of map sprite
-  WM.setBoundary(df::Box(df::Vector(0, 0), 88, 50));
+  WM.setBoundary(df::Box(df::Vector(0, 0), 98, 50));
   loadResources();
 
   // test map obj collisions
-  for (int i = 0; i < 88; i++) {
+  /*for (int i = 0; i < 88; i++) {
       for (int j = 0; j < 50; j++) {
           if (!(i > 40 && i < 50) && !(j > 23 && j < 27)) {
               new Map(df::Vector(i, j));
           }
       }
-  }
+  }*/
 
   // Set flush of logfile during development (when done, make false).
   LM.setFlush(true);
 
-  //GAME_MAP.getInstance();
+  GAME_MAP.getInstance();
   DungeonHero* hero = new DungeonHero;
   WM.setViewFollowing(hero);
   new Goblin;

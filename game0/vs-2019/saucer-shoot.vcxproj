@@ -167,6 +167,7 @@
     <ClInclude Include="..\Fireball.h" />
     <ClInclude Include="..\Goblin.h" />
     <ClInclude Include="..\Map.h" />
+    <ClInclude Include="GameUtility.h" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
