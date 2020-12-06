@@ -10,6 +10,7 @@
 #include "DisplayManager.h"
 #include "Bullet.h"
 #include "Fireball.h"
+#include "GameUtility.h"
 
 #include "GameUtility.h"
 
@@ -32,16 +33,17 @@ DungeonHero::DungeonHero() {
 	//set init variables
 	fire_slowdown = 15;
 	fire_countdown = fire_slowdown;
-	move_slowdown = 2;
+	move_slowdown = 1;
 	move_countdown = move_slowdown;
 	hp = 100;
-	ammo = 0; //SET LATER
+	ammo = 20;
 	currentDir = 4; //1 = up
 					//2 = down
 					//3 = left
 					//4 = right
 	equipped = 0; //0 = gun
 				  //1 = magic
+	hasFireball = false; //true when fireball pickup is obtained
 }
 
 //DESTRUCTOR
@@ -118,7 +120,7 @@ void DungeonHero::kbd(const df::EventKeyboard* p_keyboard_event){
 			break;
 	case df::Keyboard::E:
 		if (p_keyboard_event->getKeyboardAction() == df::KEY_PRESSED)
-			if (equipped == 0) {
+			if (equipped == 0 && hasFireball) {
 				equipped = 1;
 			}
 			else {
@@ -142,6 +144,7 @@ void DungeonHero::move(int dir){
 	// If stays on window, allow move.
 	df::Vector new_pos(getPosition().getX(), getPosition().getY() + dir);
 
+	
 	if (checkOverlapMap(this, new_pos) == true) {
 		return;	// overlaps, doesn't move, else continue
 	}
@@ -149,6 +152,7 @@ void DungeonHero::move(int dir){
 	if ((new_pos.getY() > -1) &&
 		(new_pos.getY() < WM.getBoundary().getVertical() - 1))
 		WM.moveObject(this, new_pos);
+	
 	WM.moveObject(this, new_pos);
 }
 
@@ -198,8 +202,15 @@ void DungeonHero::fire(){
 
 	if (equipped == 0) {
 		//gun equipped
+		if (ammo <= 0) {
+			//dont fire
+			return;
+		}
 		Bullet* p = new Bullet(getPosition());
 		p->setVelocity(v);
+		ammo--;
+		df::EventView ev("Ammo:", -1, true);
+		WM.onEvent(&ev);
 	}
 	else if (equipped == 1) {
 		//magic equipped
@@ -235,18 +246,30 @@ void DungeonHero::collide(const df::EventCollision* p_c){
 	if (((p_c->getObject1()->getType()) == "Goblin") ||
 		((p_c->getObject2()->getType()) == "Goblin")) {
 		hp -= 20;
+		df::EventView ev("Health:", -20, true);
+		WM.onEvent(&ev);
 		if (hp <= 0) {
 			//game over
 			WM.markForDelete(this);
 		}
-		//when hit, hero should go back to starting position.
-		df::Vector p(7, WM.getBoundary().getVertical() / 2);
-		setPosition(p);
-		//shake screen a little
-		DM.shake(5, 5, 5);
-		//play explosion sound
-		//df::Sound* p_sound = RM.getSound("explode");
-		//p_sound->play();
+	}
+	else if (((p_c->getObject1()->getType()) == "bulletPickup") ||
+		((p_c->getObject2()->getType()) == "bulletPickup")) {
+		ammo += 10;
+		df::EventView ev("Ammo:", 10, true);
+		WM.onEvent(&ev);
+	}
+	else if (((p_c->getObject1()->getType()) == "fireballPickup") ||
+		((p_c->getObject2()->getType()) == "fireballPickup")) {
+		hasFireball = true;
+		df::EventView ev("Magic:", 1, true);
+		WM.onEvent(&ev);
+	}
+	else if (((p_c->getObject1()->getType()) == "healthPickup") ||
+		((p_c->getObject2()->getType()) == "healthPickup")) {
+		hp += 20;
+		df::EventView ev("Health:", 20, true);
+		WM.onEvent(&ev);
 	}
 }
 

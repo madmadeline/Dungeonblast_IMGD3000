@@ -16,8 +16,7 @@ public:
 	static Map& getInstance();
 
 	~Map();
-	
-	
+
 	//Map(df::Vector pos);
 
 };

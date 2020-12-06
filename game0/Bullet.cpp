@@ -15,6 +15,8 @@ Bullet::Bullet(df::Vector hero_pos) {
 	df::Vector p(hero_pos.getX(), hero_pos.getY());
 	setPosition(p);
 
+	registerInterest(df::COLLISION_EVENT);
+
 	//bullets move 1 space each game loop, dir set when hero fires
 	setSpeed(1);
 }
@@ -22,6 +24,13 @@ Bullet::Bullet(df::Vector hero_pos) {
 // DRAW 
 int Bullet::draw() {
 	return DM.drawCh(getPosition(), 'o', df::YELLOW);
+}
+
+void Bullet::collide(const df::EventCollision* p_c) {
+	if (((p_c->getObject1()->getType()) == "Goblin") ||
+		((p_c->getObject2()->getType()) == "Goblin")) {
+		WM.markForDelete(this);
+	}
 }
 
 int Bullet::eventHandler(const df::Event* p_e) {
@@ -32,7 +41,7 @@ int Bullet::eventHandler(const df::Event* p_e) {
 	if (p_e->getType() == df::COLLISION_EVENT) {
 		const df::EventCollision* p_collision_event =
 			dynamic_cast <const df::EventCollision*> (p_e);
-		hit(p_collision_event);
+		collide(p_collision_event);
 		return 1;
 	}
 	return 0;

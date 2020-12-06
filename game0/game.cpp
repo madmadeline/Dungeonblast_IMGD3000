@@ -8,6 +8,10 @@
 #include "DungeonHero.h"
 #include "Goblin.h"
 #include "Map.h"
+#include "BulletPickup.h"
+#include "FireballPickup.h"
+#include "ViewObject.h"
+#include "HealthPickup.h"
 
 #include "WorldManager.h"
 
@@ -45,6 +49,32 @@ int main(int argc, char *argv[]) {
   DungeonHero* hero = new DungeonHero;
   WM.setViewFollowing(hero);
   new Goblin;
+  df::Vector p(12, WM.getBoundary().getVertical() / 2);
+  df::Vector p2(72, WM.getBoundary().getVertical() / 2);
+  df::Vector p3(50, WM.getBoundary().getVertical() / 3);
+  new BulletPickup(p);
+  new FireballPickup(p2);
+  new HealthPickup(p3);
+
+  //view objects
+  df::ViewObject* vo_hp = new df::ViewObject; //health counter
+  vo_hp->setLocation(df::TOP_LEFT);
+  vo_hp->setViewString("Health:");
+  vo_hp->setValue(100);
+  vo_hp->setColor(df::YELLOW);
+
+  df::ViewObject* vo_am = new df::ViewObject; //ammo counter
+  vo_am->setLocation(df::TOP_CENTER);
+  vo_am->setViewString("Ammo:");
+  vo_am->setValue(20);
+  vo_am->setColor(df::YELLOW);
+
+  df::ViewObject* vo_mg = new df::ViewObject; //magic counter
+  vo_mg->setLocation(df::TOP_RIGHT);
+  vo_mg->setViewString("Magic:");
+  vo_mg->setValue(0);
+  vo_mg->setColor(df::YELLOW);
+
 
   GM.run();
 
