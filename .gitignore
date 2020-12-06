@@ -3,3 +3,13 @@
 /.vs
 /game0/vs-2019/.vs
 /game0/vs-2019/x64
+*.suo
+*.user
+*.ncb
+*.sbr
+*.log
+*.tlog
+*.obj
+*.exe
+*.tlog
+*.log

@@ -1,2 +1,0 @@
-C:\Users\madel\Desktop\Technical Game Design\game0\vs-2019\x64\Debug\saucer-shoot.exe
-C:\Users\madel\Desktop\Technical Game Design\game0\vs-2019\x64\Debug\saucer-shoot.pdb
