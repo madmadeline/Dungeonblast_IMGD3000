@@ -22,7 +22,7 @@ DungeonHero::DungeonHero() {
 	registerInterest(df::COLLISION_EVENT);
 
 	//set init position
-	df::Vector p(7, WM.getBoundary().getVertical() / 2);
+	df::Vector p(42, WM.getBoundary().getVertical() / 2);
 	setPosition(p);
 
 	//set init variables
@@ -130,9 +130,10 @@ void DungeonHero::move(int dir){
 
 	// If stays on window, allow move.
 	df::Vector new_pos(getPosition().getX(), getPosition().getY() + dir);
-	if ((new_pos.getY() > 3) &&
+	/*if ((new_pos.getY() > 3) &&
 		(new_pos.getY() < WM.getBoundary().getVertical() - 1))
-		WM.moveObject(this, new_pos);
+		WM.moveObject(this, new_pos);*/
+	WM.moveObject(this, new_pos);
 }
 
 //MOVE THE HERO LEFT OR RIGHT
@@ -223,7 +224,8 @@ void DungeonHero::collide(const df::EventCollision* p_c){
 		//shake screen a little
 		DM.shake(5, 5, 5);
 		//play explosion sound
-		df::Sound* p_sound = RM.getSound("explode");
-		p_sound->play();
+		//df::Sound* p_sound = RM.getSound("explode");
+		//p_sound->play();
 	}
 }
+

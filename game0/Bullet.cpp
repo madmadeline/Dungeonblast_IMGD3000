@@ -12,7 +12,7 @@ Bullet::Bullet(df::Vector hero_pos) {
 	setSolidness(df::SOFT);
 
 	//bullet initial location based on hero
-	df::Vector p(hero_pos.getX() + 3, hero_pos.getY());
+	df::Vector p(hero_pos.getX(), hero_pos.getY());
 	setPosition(p);
 
 	//bullets move 1 space each game loop, dir set when hero fires
@@ -21,7 +21,7 @@ Bullet::Bullet(df::Vector hero_pos) {
 
 // DRAW 
 int Bullet::draw() {
-	return DM.drawCh(getPosition(), 'o', df::WHITE);
+	return DM.drawCh(getPosition(), 'o', df::YELLOW);
 }
 
 int Bullet::eventHandler(const df::Event* p_e) {
