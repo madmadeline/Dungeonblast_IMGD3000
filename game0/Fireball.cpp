@@ -24,6 +24,14 @@ int Fireball::draw() {
 	return DM.drawCh(getPosition(), 'o', df::RED);
 }
 
+void Fireball::collide(const df::EventCollision* p_c) {
+	if (((p_c->getObject1()->getType()) == "Goblin") ||
+		((p_c->getObject2()->getType()) == "Goblin")) {
+		WM.markForDelete(this);
+	}
+}
+
+
 int Fireball::eventHandler(const df::Event* p_e) {
 	if (p_e->getType() == df::OUT_EVENT) {
 		out();
@@ -32,7 +40,7 @@ int Fireball::eventHandler(const df::Event* p_e) {
 	if (p_e->getType() == df::COLLISION_EVENT) {
 		const df::EventCollision* p_collision_event =
 			dynamic_cast <const df::EventCollision*> (p_e);
-		hit(p_collision_event);
+		collide(p_collision_event);
 		return 1;
 	}
 	return 0;

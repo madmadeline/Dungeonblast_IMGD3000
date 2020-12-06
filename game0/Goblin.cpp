@@ -11,7 +11,7 @@ Goblin::Goblin() {
 	//setVelocity(df::Vector(-0.25, 0));
 
 	//set init position
-	df::Vector p(48, WM.getBoundary().getVertical() / 2);
+	df::Vector p(9, 32);
 	setPosition(p);
 
 	registerInterest(df::COLLISION_EVENT);

@@ -14,6 +14,7 @@ private:
 	int ammo;
 	int currentDir;
 	int equipped;
+	bool hasFireball;
 
 	void kbd(const df::EventKeyboard* p_keyboard_event);
 	void move(int dir);

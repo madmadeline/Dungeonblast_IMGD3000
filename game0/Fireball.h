@@ -12,4 +12,5 @@ public:
 	Fireball(df::Vector hero_pos);
 	int draw();
 	int eventHandler(const df::Event* p_e);
+	void collide(const df::EventCollision* p_c);
 };

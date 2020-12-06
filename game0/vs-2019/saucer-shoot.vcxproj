@@ -154,18 +154,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Bullet.cpp" />
+    <ClCompile Include="..\BulletPickup.cpp" />
     <ClCompile Include="..\DungeonHero.cpp" />
     <ClCompile Include="..\Fireball.cpp" />
+    <ClCompile Include="..\FireballPickup.cpp" />
     <ClCompile Include="..\game.cpp" />
     <ClCompile Include="..\Goblin.cpp" />
+    <ClCompile Include="..\HealthPickup.cpp" />
     <ClCompile Include="..\Map.cpp" />
     <ClCompile Include="..\GameUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Bullet.h" />
+    <ClInclude Include="..\BulletPickup.h" />
     <ClInclude Include="..\DungeonHero.h" />
     <ClInclude Include="..\Fireball.h" />
+    <ClInclude Include="..\FireballPickup.h" />
+    <ClInclude Include="..\GameUtility.h" />
     <ClInclude Include="..\Goblin.h" />
+    <ClInclude Include="..\HealthPickup.h" />
     <ClInclude Include="..\Map.h" />
   </ItemGroup>
   <ItemGroup>
