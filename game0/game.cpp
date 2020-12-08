@@ -14,10 +14,12 @@
 #include "HealthPickup.h"
 
 #include "WorldManager.h"
+#include "Equipped.h"
 
 void loadResources(void) {
     RM.loadSprite("Sprites/map2.txt", "MapTest");
     RM.loadSprite("Sprites/hero-spr.txt", "Hero");
+    RM.loadSprite("Sprites/goblin-spr.txt", "Goblin");
 }
 
 int main(int argc, char *argv[]) {
@@ -54,10 +56,10 @@ int main(int argc, char *argv[]) {
   WM.setViewFollowing(hero);
 
   // some enemies
-  new Goblin(9, 32);
-  new Goblin(21, 27);
-  new Goblin(28, 47);
-  new Goblin(37, 39);
+  new Goblin(9, 32, 1);
+  new Goblin(21, 27, -1);
+  new Goblin(28, 47, -2);
+  new Goblin(37, 39,2);
 
   // some pickups
   new BulletPickup(df::Vector(15, 33));
@@ -77,12 +79,7 @@ int main(int argc, char *argv[]) {
   vo_am->setValue(20);
   vo_am->setColor(df::YELLOW);
 
-  df::ViewObject* vo_mg = new df::ViewObject; //magic counter
-  vo_mg->setLocation(df::TOP_RIGHT);
-  vo_mg->setViewString("Magic:");
-  vo_mg->setValue(0);
-  vo_mg->setColor(df::YELLOW);
-
+  Equipped eq;
 
   GM.run();
 

@@ -156,6 +156,7 @@
     <ClCompile Include="..\Bullet.cpp" />
     <ClCompile Include="..\BulletPickup.cpp" />
     <ClCompile Include="..\DungeonHero.cpp" />
+    <ClCompile Include="..\Equipped.cpp" />
     <ClCompile Include="..\Fireball.cpp" />
     <ClCompile Include="..\FireballPickup.cpp" />
     <ClCompile Include="..\game.cpp" />
@@ -163,17 +164,20 @@
     <ClCompile Include="..\HealthPickup.cpp" />
     <ClCompile Include="..\Map.cpp" />
     <ClCompile Include="..\GameUtility.cpp" />
+    <ClCompile Include="..\StringEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Bullet.h" />
     <ClInclude Include="..\BulletPickup.h" />
     <ClInclude Include="..\DungeonHero.h" />
+    <ClInclude Include="..\Equipped.h" />
     <ClInclude Include="..\Fireball.h" />
     <ClInclude Include="..\FireballPickup.h" />
     <ClInclude Include="..\GameUtility.h" />
     <ClInclude Include="..\Goblin.h" />
     <ClInclude Include="..\HealthPickup.h" />
     <ClInclude Include="..\Map.h" />
+    <ClInclude Include="..\StringEvent.h" />
     <ClInclude Include="GameUtility.h" />
   </ItemGroup>
   <ItemGroup>

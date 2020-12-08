@@ -19,7 +19,7 @@ private:
 	void kbd(const df::EventKeyboard* p_keyboard_event);
 	void move(int dir);
 	void advance(int dir);
-	void fire();
+	void fire(df::Vector target);
 	void mouse(const df::EventMouse* p_mouse_event);
 	void step();
 	void collide(const df::EventCollision* p_c);

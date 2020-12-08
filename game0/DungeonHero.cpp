@@ -11,8 +11,10 @@
 #include "Bullet.h"
 #include "Fireball.h"
 #include "GameUtility.h"
+#include <ViewObject.h>
+#include "Equipped.h"
+#include "StringEvent.h"
 
-#include "GameUtility.h"
 
 //CONSTRUCTOR
 DungeonHero::DungeonHero() {
@@ -114,17 +116,22 @@ void DungeonHero::kbd(const df::EventKeyboard* p_keyboard_event){
 			currentDir = 4;
 			advance(1);
 		break;
-	case df::Keyboard::SPACE:
+	/*case df::Keyboard::SPACE:
 		if (p_keyboard_event->getKeyboardAction() == df::KEY_PRESSED)
 			fire();
-			break;
+			break;*/
 	case df::Keyboard::E:
 		if (p_keyboard_event->getKeyboardAction() == df::KEY_PRESSED)
 			if (equipped == 0 && hasFireball) {
 				equipped = 1;
+
+				FireballEvent fireb;
+				WM.onEvent(&fireb);
 			}
 			else {
 				equipped = 0;
+				GunEvent gune;
+				WM.onEvent(&gune);
 			}
 		break;
 	default: //other key pressed
@@ -176,29 +183,14 @@ void DungeonHero::advance(int dir) {
 }
 
 //FIRE BULLET/MAGIC
-void DungeonHero::fire(){
+void DungeonHero::fire(df::Vector target){
 	if (fire_countdown > 0)
 		return;
 	fire_countdown = fire_slowdown;
 
-	df::Vector v;
-	//direction of fire is based on currentDir
-	if (currentDir == 1) {
-		//up
-		v = df::Vector(0, -1);
-	}
-	else if (currentDir == 2) {
-		//down
-		v = df::Vector(0, 1);
-	}
-	else if (currentDir == 3) {
-		//left
-		v = df::Vector(-1, 0);
-	}
-	else if (currentDir == 4) {
-		//right
-		v = df::Vector(1, 0);
-	}
+	df::Vector v = target - getPosition();
+	v.normalize();
+	v.scale(1);
 
 	if (equipped == 0) {
 		//gun equipped
@@ -223,9 +215,9 @@ void DungeonHero::fire(){
 //MOUSE EVENT
 void DungeonHero::mouse(const df::EventMouse* p_mouse_event) {
 	//pressed button?
-	/*if ((p_mouse_event->getMouseAction() == df::CLICKED) &&
+	if ((p_mouse_event->getMouseAction() == df::CLICKED) &&
 		(p_mouse_event->getMouseButton() == df::Mouse::LEFT))
-		fire(p_mouse_event->getMousePosition());*/
+		fire(p_mouse_event->getMousePosition());
 }
 
 //STEP EVENT STUFF

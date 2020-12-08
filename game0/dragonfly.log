@@ -1,257 +1,159 @@
-01:40:50    0 ****************************************************
-01:40:50    0 ** Dragonfly version 4.15 **
-01:40:50    0 ** Game engine started **
-01:40:50    0 ****************************************************
-01:40:51    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/map2.txt'.
-01:40:51    0 ResourceManager::loadSprite(): Sprite 'MapTest' loaded.
-01:40:51    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/hero-spr.txt'.
-01:40:51    0 ResourceManager::loadSprite(): Sprite 'Hero' loaded.
-01:40:51    0 WorldManager::isValid(): Event df-collision handled automatically.
-01:40:51    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-01:40:51    0 WorldManager::isValid(): Event df-collision handled automatically.
-01:40:51    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-01:40:51    0 WorldManager::isValid(): Event df-collision handled automatically.
-01:40:51    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-01:40:51    0 WorldManager::isValid(): Event df-collision handled automatically.
-01:40:51    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-01:40:51    0 WorldManager::isValid(): Event df-collision handled automatically.
-01:40:51    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-01:40:52    1 GameManager::run(): Can't keep up! frame_time 33 ms, split 246 ms
-01:40:52    2 GameManager::run(): Can't keep up! frame_time 33 ms, split 226 ms
-01:40:52    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 228 ms
-01:40:53    4 GameManager::run(): Can't keep up! frame_time 33 ms, split 242 ms
-01:40:53    5 GameManager::run(): Can't keep up! frame_time 33 ms, split 234 ms
-01:40:53    6 GameManager::run(): Can't keep up! frame_time 33 ms, split 245 ms
-01:40:53    7 GameManager::run(): Can't keep up! frame_time 33 ms, split 225 ms
-01:40:54    8 GameManager::run(): Can't keep up! frame_time 33 ms, split 228 ms
-01:40:54    9 GameManager::run(): Can't keep up! frame_time 33 ms, split 237 ms
-01:40:54   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
-01:40:54   11 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:54   12 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:40:54   13 GameManager::run(): Can't keep up! frame_time 33 ms, split 122 ms
-01:40:54   14 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:54   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:54   16 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:40:54   17 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:54   18 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:55   19 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:55   20 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:55   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 99 ms
-01:40:55   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:55   23 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:55   24 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:55   25 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:55   26 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:55   27 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:40:55   28 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:55   29 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:55   30 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:55   31 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:55   32 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:56   33 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:56   34 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:56   35 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
-01:40:56   36 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-01:40:56   37 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:56   38 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:56   39 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:56   40 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:56   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
-01:40:56   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 100 ms
-01:40:56   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
-01:40:56   44 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:56   45 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:57   46 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:57   47 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:40:57   48 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:57   49 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:57   50 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:40:57   51 GameManager::run(): Can't keep up! frame_time 33 ms, split 76 ms
-01:40:57   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:57   53 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:40:57   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:57   55 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:40:57   56 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:57   57 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:57   58 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:57   59 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:58   60 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:58   61 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:58   62 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:58   63 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:40:58   64 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:40:58   65 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:58   66 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:40:58   67 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:58   68 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:58   69 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:58   70 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:58   71 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:58   72 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:58   73 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:58   74 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:59   75 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
-01:40:59   76 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:59   77 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:40:59   78 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
-01:40:59   79 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:59   80 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:59   81 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:59   82 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:40:59   83 GameManager::run(): Can't keep up! frame_time 33 ms, split 90 ms
-01:40:59   84 GameManager::run(): Can't keep up! frame_time 33 ms, split 101 ms
-01:40:59   85 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:40:59   86 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:40:59   87 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:00   88 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
-01:41:00   89 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:00   90 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:41:00   91 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
-01:41:00   92 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:41:00   93 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:00   94 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:00   95 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
-01:41:00   96 GameManager::run(): Can't keep up! frame_time 33 ms, split 80 ms
-01:41:00   97 GameManager::run(): Can't keep up! frame_time 33 ms, split 133 ms
-01:41:00   98 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
-01:41:00   99 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
-01:41:00  100 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:01  101 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:01  102 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:01  103 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
-01:41:01  104 GameManager::run(): Can't keep up! frame_time 33 ms, split 92 ms
-01:41:01  105 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:01  106 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:01  107 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:01  108 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:01  109 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:01  110 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
-01:41:01  111 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
-01:41:01  112 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:01  113 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:02  114 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:02  115 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
-01:41:02  116 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:02  117 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:02  118 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:02  119 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
-01:41:02  120 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:02  121 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:02  122 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:02  123 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:02  124 GameManager::run(): Can't keep up! frame_time 33 ms, split 84 ms
-01:41:02  125 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:02  126 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:02  127 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:02  128 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:03  129 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:03  130 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:03  131 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:03  132 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:03  133 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:03  134 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:03  135 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:03  136 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:03  137 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:03  138 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
-01:41:03  139 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:03  140 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:03  141 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:03  142 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:04  143 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:04  144 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:04  145 GameManager::run(): Can't keep up! frame_time 33 ms, split 99 ms
-01:41:04  146 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
-01:41:04  147 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:04  148 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:04  149 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:04  150 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:04  151 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:04  152 GameManager::run(): Can't keep up! frame_time 33 ms, split 106 ms
-01:41:04  153 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
-01:41:04  154 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:04  155 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:04  156 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:05  157 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:05  158 GameManager::run(): Can't keep up! frame_time 33 ms, split 84 ms
-01:41:05  159 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:05  160 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:05  161 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:05  162 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:05  163 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:05  164 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:05  165 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:05  166 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:05  167 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:05  168 GameManager::run(): Can't keep up! frame_time 33 ms, split 100 ms
-01:41:05  169 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:05  170 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:06  171 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:06  172 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:06  173 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:06  174 GameManager::run(): Can't keep up! frame_time 33 ms, split 80 ms
-01:41:06  175 GameManager::run(): Can't keep up! frame_time 33 ms, split 125 ms
-01:41:06  176 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
-01:41:06  177 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:06  178 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:06  179 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:06  180 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:06  181 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:06  182 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:07  183 GameManager::run(): Can't keep up! frame_time 33 ms, split 101 ms
-01:41:07  184 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:07  185 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:07  186 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:07  187 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:07  188 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:07  189 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:07  190 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:07  191 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:07  192 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:07  193 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:07  194 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:07  195 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:07  196 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:41:08  197 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
-01:41:08  198 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:08  199 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:41:08  200 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
-01:41:08  201 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:08  202 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:08  203 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:08  204 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:08  205 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:08  206 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:08  207 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:08  208 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
-01:41:08  209 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:08  210 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:09  211 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
-01:41:09  212 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:09  213 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
-01:41:09  214 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:09  215 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:09  216 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:09  217 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:09  218 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:09  219 GameManager::run(): Can't keep up! frame_time 33 ms, split 93 ms
-01:41:09  220 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
-01:41:09  221 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:09  222 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:09  223 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
-01:41:09  224 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:10  225 GameManager::run(): Can't keep up! frame_time 33 ms, split 83 ms
-01:41:10  226 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:10  227 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
-01:41:10  228 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:10  229 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:10  230 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:10  231 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
-01:41:10  232 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:10  233 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
-01:41:10  234 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
-01:41:10  235 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
-01:41:10  236 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:10  237 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
-01:41:10  238 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
-01:41:11  239 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+12:13:02    0 ****************************************************
+12:13:02    0 ** Dragonfly version 4.15 **
+12:13:02    0 ** Game engine started **
+12:13:02    0 ****************************************************
+12:13:02    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/map2.txt'.
+12:13:02    0 ResourceManager::loadSprite(): Sprite 'MapTest' loaded.
+12:13:02    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/hero-spr.txt'.
+12:13:02    0 ResourceManager::loadSprite(): Sprite 'Hero' loaded.
+12:13:02    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/goblin-spr.txt'.
+12:13:02    0 ResourceManager::loadSprite(): Sprite 'Goblin' loaded.
+12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
+12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
+12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
+12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
+12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
+12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+12:13:02    2 MOVING A GOBLIN
+12:13:02    2 MOVING A GOBLIN
+12:13:02    2 GOBLIN OVERLAPPED MAP!!
+12:13:02    2 MOVING A GOBLIN
+12:13:02    2 MOVING A GOBLIN
+12:13:03    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 145 ms
+12:13:03    4 GameManager::run(): Can't keep up! frame_time 33 ms, split 135 ms
+12:13:03    5 MOVING A GOBLIN
+12:13:03    5 MOVING A GOBLIN
+12:13:03    5 MOVING A GOBLIN
+12:13:03    5 MOVING A GOBLIN
+12:13:03    5 GameManager::run(): Can't keep up! frame_time 33 ms, split 121 ms
+12:13:03    6 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
+12:13:03    7 GameManager::run(): Can't keep up! frame_time 33 ms, split 124 ms
+12:13:03    8 MOVING A GOBLIN
+12:13:03    8 MOVING A GOBLIN
+12:13:03    8 GOBLIN OVERLAPPED MAP!!
+12:13:03    8 MOVING A GOBLIN
+12:13:03    8 MOVING A GOBLIN
+12:13:03    8 GameManager::run(): Can't keep up! frame_time 33 ms, split 124 ms
+12:13:03    9 GameManager::run(): Can't keep up! frame_time 33 ms, split 132 ms
+12:13:03   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 136 ms
+12:13:03   11 MOVING A GOBLIN
+12:13:03   11 MOVING A GOBLIN
+12:13:03   11 MOVING A GOBLIN
+12:13:03   11 MOVING A GOBLIN
+12:13:04   11 GameManager::run(): Can't keep up! frame_time 33 ms, split 121 ms
+12:13:04   12 GameManager::run(): Can't keep up! frame_time 33 ms, split 158 ms
+12:13:04   13 GameManager::run(): Can't keep up! frame_time 33 ms, split 133 ms
+12:13:04   14 MOVING A GOBLIN
+12:13:04   14 MOVING A GOBLIN
+12:13:04   14 MOVING A GOBLIN
+12:13:04   14 MOVING A GOBLIN
+12:13:04   14 GameManager::run(): Can't keep up! frame_time 33 ms, split 113 ms
+12:13:04   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 144 ms
+12:13:04   16 GameManager::run(): Can't keep up! frame_time 33 ms, split 130 ms
+12:13:04   17 MOVING A GOBLIN
+12:13:04   17 MOVING A GOBLIN
+12:13:04   17 GOBLIN OVERLAPPED MAP!!
+12:13:04   17 MOVING A GOBLIN
+12:13:04   17 MOVING A GOBLIN
+12:13:04   17 GOBLIN OVERLAPPED MAP!!
+12:13:04   17 GameManager::run(): Can't keep up! frame_time 33 ms, split 120 ms
+12:13:04   18 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
+12:13:05   19 GameManager::run(): Can't keep up! frame_time 33 ms, split 123 ms
+12:13:05   20 MOVING A GOBLIN
+12:13:05   20 MOVING A GOBLIN
+12:13:05   20 MOVING A GOBLIN
+12:13:05   20 MOVING A GOBLIN
+12:13:05   20 GameManager::run(): Can't keep up! frame_time 33 ms, split 132 ms
+12:13:05   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 163 ms
+12:13:05   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 116 ms
+12:13:05   23 MOVING A GOBLIN
+12:13:05   23 GOBLIN OVERLAPPED MAP!!
+12:13:05   23 MOVING A GOBLIN
+12:13:05   23 MOVING A GOBLIN
+12:13:05   23 MOVING A GOBLIN
+12:13:05   23 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
+12:13:05   24 GameManager::run(): Can't keep up! frame_time 33 ms, split 110 ms
+12:13:05   25 GameManager::run(): Can't keep up! frame_time 33 ms, split 106 ms
+12:13:05   26 MOVING A GOBLIN
+12:13:05   26 MOVING A GOBLIN
+12:13:05   26 GOBLIN OVERLAPPED MAP!!
+12:13:05   26 MOVING A GOBLIN
+12:13:05   26 MOVING A GOBLIN
+12:13:05   26 GameManager::run(): Can't keep up! frame_time 33 ms, split 165 ms
+12:13:06   27 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
+12:13:06   28 GameManager::run(): Can't keep up! frame_time 33 ms, split 155 ms
+12:13:06   29 MOVING A GOBLIN
+12:13:06   29 MOVING A GOBLIN
+12:13:06   29 MOVING A GOBLIN
+12:13:06   29 MOVING A GOBLIN
+12:13:06   29 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
+12:13:06   30 GameManager::run(): Can't keep up! frame_time 33 ms, split 106 ms
+12:13:06   31 GameManager::run(): Can't keep up! frame_time 33 ms, split 112 ms
+12:13:06   32 MOVING A GOBLIN
+12:13:06   32 MOVING A GOBLIN
+12:13:06   32 MOVING A GOBLIN
+12:13:06   32 MOVING A GOBLIN
+12:13:06   32 GameManager::run(): Can't keep up! frame_time 33 ms, split 172 ms
+12:13:06   33 GameManager::run(): Can't keep up! frame_time 33 ms, split 193 ms
+12:13:07   34 GameManager::run(): Can't keep up! frame_time 33 ms, split 154 ms
+12:13:07   35 MOVING A GOBLIN
+12:13:07   35 MOVING A GOBLIN
+12:13:07   35 GOBLIN OVERLAPPED MAP!!
+12:13:07   35 MOVING A GOBLIN
+12:13:07   35 MOVING A GOBLIN
+12:13:07   35 GameManager::run(): Can't keep up! frame_time 33 ms, split 117 ms
+12:13:07   36 GameManager::run(): Can't keep up! frame_time 33 ms, split 133 ms
+12:13:07   37 GameManager::run(): Can't keep up! frame_time 33 ms, split 135 ms
+12:13:07   38 MOVING A GOBLIN
+12:13:07   38 MOVING A GOBLIN
+12:13:07   38 MOVING A GOBLIN
+12:13:07   38 MOVING A GOBLIN
+12:13:07   38 GameManager::run(): Can't keep up! frame_time 33 ms, split 165 ms
+12:13:07   39 GameManager::run(): Can't keep up! frame_time 33 ms, split 182 ms
+12:13:07   40 GameManager::run(): Can't keep up! frame_time 33 ms, split 169 ms
+12:13:07   41 MOVING A GOBLIN
+12:13:07   41 MOVING A GOBLIN
+12:13:07   41 MOVING A GOBLIN
+12:13:07   41 MOVING A GOBLIN
+12:13:08   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 124 ms
+12:13:08   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 184 ms
+12:13:08   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 112 ms
+12:13:08   44 MOVING A GOBLIN
+12:13:08   44 MOVING A GOBLIN
+12:13:08   44 GOBLIN OVERLAPPED MAP!!
+12:13:08   44 MOVING A GOBLIN
+12:13:08   44 MOVING A GOBLIN
+12:13:08   44 GameManager::run(): Can't keep up! frame_time 33 ms, split 117 ms
+12:13:08   45 GameManager::run(): Can't keep up! frame_time 33 ms, split 128 ms
+12:13:08   46 GameManager::run(): Can't keep up! frame_time 33 ms, split 132 ms
+12:13:08   47 MOVING A GOBLIN
+12:13:08   47 MOVING A GOBLIN
+12:13:08   47 MOVING A GOBLIN
+12:13:08   47 MOVING A GOBLIN
+12:13:08   47 GameManager::run(): Can't keep up! frame_time 33 ms, split 113 ms
+12:13:09   48 GameManager::run(): Can't keep up! frame_time 33 ms, split 120 ms
+12:13:09   49 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
+12:13:09   50 MOVING A GOBLIN
+12:13:09   50 MOVING A GOBLIN
+12:13:09   50 MOVING A GOBLIN
+12:13:09   50 MOVING A GOBLIN
+12:13:09   50 GameManager::run(): Can't keep up! frame_time 33 ms, split 143 ms
+12:13:09   51 GameManager::run(): Can't keep up! frame_time 33 ms, split 129 ms
+12:13:09   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 157 ms
+12:13:09   53 MOVING A GOBLIN
+12:13:09   53 MOVING A GOBLIN
+12:13:09   53 GOBLIN OVERLAPPED MAP!!
+12:13:09   53 MOVING A GOBLIN
+12:13:09   53 MOVING A GOBLIN
+12:13:09   53 GameManager::run(): Can't keep up! frame_time 33 ms, split 127 ms
+12:13:09   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
+12:13:09   55 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
+12:13:10   56 MOVING A GOBLIN
+12:13:10   56 MOVING A GOBLIN
+12:13:10   56 MOVING A GOBLIN
+12:13:10   56 MOVING A GOBLIN
+12:13:10   56 GameManager::run(): Can't keep up! frame_time 33 ms, split 247 ms

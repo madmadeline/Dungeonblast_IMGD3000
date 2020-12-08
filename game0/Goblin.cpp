@@ -5,31 +5,26 @@
 #include "EventOut.h"
 #include "DisplayManager.h"
 #include <stdlib.h>
+#include "GameUtility.h"
+#include <iostream>
+#include <EventStep.h>
 
-/*Goblin::Goblin() {
+Goblin::Goblin(int x, int y, int d) {
 	setType("Goblin");
-	//setVelocity(df::Vector(-0.25, 0));
+	setSprite("Goblin");
 
-	//set init position
-	//df::Vector p(48, WM.getBoundary().getVertical() / 2);
-	df::Vector p(9, 32);
-	setPosition(p);
-
-	registerInterest(df::COLLISION_EVENT);
-	hp = 12;
-}*/
-
-Goblin::Goblin(int x, int y) {
-	setType("Goblin");
-	//setVelocity(df::Vector(-0.25, 0));
-
-	//set init position
-	//df::Vector p(48, WM.getBoundary().getVertical() / 2);
-	//df::Vector p(9, 32);
 	setPosition(df::Vector(x, y));
 
 	registerInterest(df::COLLISION_EVENT);
+	registerInterest(df::STEP_EVENT);
+	move_slowdown = 2;
+	move_countdown = move_slowdown;
 	hp = 12;
+	dir = d; //controls the initial direction of the goblin. 
+			   //1 = up
+			   //-1 = down
+			   //2 = left
+			   //-2 = right
 }
 
 int Goblin::eventHandler(const df::Event* p_e) {
@@ -41,11 +36,26 @@ int Goblin::eventHandler(const df::Event* p_e) {
 		return 1;
 	}
 
+	if (p_e->getType() == df::STEP_EVENT) {
+		step();
+		return 1;
+	}
+
 	return 0;
 }
 
 Goblin::~Goblin() {
 
+}
+
+//STEP EVENT STUFF
+void Goblin::step() {
+	move_countdown--;
+	if (move_countdown < 0) {
+		//LM.writeLog("goblin can move");
+		move_countdown = 0;
+		move(dir);
+	}
 }
 
 // DRAW 
@@ -81,5 +91,66 @@ void Goblin::hit(const df::EventCollision* p_c) {
 	if (((p_c->getObject1()->getType()) == "Hero") ||
 		((p_c->getObject2()->getType()) == "Hero")) {
 		WM.markForDelete(this); //delete the enemy
+	}
+}
+
+void Goblin::move(int d) {
+	// See if time to move.
+	if (move_countdown > 0)
+		return;
+	move_countdown = move_slowdown;
+	//set the velocity depending on the direction
+	df::Vector new_pos(getPosition().getX(), getPosition().getY());
+	LM.writeLog("MOVING A GOBLIN");
+	switch (d) {
+	case 1:
+		// If stays on window, allow move.
+		new_pos.setY((new_pos.getY()) - 1);
+
+		if (checkOverlapMap(this, new_pos) == true) {
+			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
+			dir = -dir;
+			return;	// overlaps, switch direction, else continue
+		}
+
+		//set velocity up
+		setVelocity(df::Vector(0, -0.25));
+		break;
+	case -1:
+		// If stays on window, allow move.
+		new_pos.setY((new_pos.getY()) + 2);
+
+		if (checkOverlapMap(this, new_pos) == true) {
+			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
+			dir = -dir;
+			return;	// overlaps, switch direction, else continue
+		}
+		//set velocity down
+		setVelocity(df::Vector(0, 0.25));
+		break;
+	case 2:
+		// If stays on window, allow move.
+		new_pos.setX((new_pos.getX()) - 2);
+
+		if (checkOverlapMap(this, new_pos) == true) {
+			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
+			dir = -dir;
+			return;	// overlaps, switch direction, else continue
+		}
+		//set velocity left
+		setVelocity(df::Vector(-0.25, 0));
+		break;
+	case -2:
+		// If stays on window, allow move.
+		new_pos.setX((new_pos.getX()) + 2);
+
+		if (checkOverlapMap(this, new_pos) == true) {
+			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
+			dir = -dir;
+			return;	// overlaps, switch direction, else continue
+		}
+		//set velocity right
+		setVelocity(df::Vector(0.25, 0));
+		break;
 	}
 }

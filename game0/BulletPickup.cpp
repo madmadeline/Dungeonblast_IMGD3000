@@ -13,7 +13,7 @@ BulletPickup::BulletPickup(df::Vector init_pos)
 
 int BulletPickup::draw()
 {
-	return DM.drawCh(getPosition(), 'B', df::YELLOW);
+	return DM.drawCh(getPosition(), 'A', df::YELLOW);
 }
 
 int BulletPickup::eventHandler(const df::Event* p_e)
