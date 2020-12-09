@@ -60,9 +60,9 @@ void Goblin::step() {
 
 // DRAW 
 int Goblin::draw() {
-	return DM.drawCh(getPosition(), 'X', df::GREEN);
+	//return DM.drawCh(getPosition(), 'X', df::GREEN);
+	return Object::draw();
 }
-
 
 void Goblin::hit(const df::EventCollision* p_c) {
 	//if enemy on enemy collision, ignore
@@ -102,6 +102,7 @@ void Goblin::move(int d) {
 	//set the velocity depending on the direction
 	df::Vector new_pos(getPosition().getX(), getPosition().getY());
 	LM.writeLog("MOVING A GOBLIN");
+
 	switch (d) {
 	case 1:
 		new_pos.setY((new_pos.getY()) - 1);
@@ -150,5 +151,4 @@ void Goblin::move(int d) {
 		break;
 	}
 }
-
 

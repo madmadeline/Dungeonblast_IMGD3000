@@ -1,6 +1,7 @@
 #include "WorldManager.h"
 #include "Map.h"
 #include <cmath>
+#include "Utility.h"
 
 #include "GameUtility.h"
 
@@ -9,10 +10,12 @@ bool checkOverlapMap(df::Object* p_o, df::Vector new_pos, int dir) {
 	// and obj_box being the given object's box (for w and h)
 	df::Box obj_box = p_o->getBox();
 
-	int box_x = (int)new_pos.getX();
-	int box_y = (int)new_pos.getY();
+	df::Vector box_corner = obj_box.getCorner();
+	
 	int box_w = (int)obj_box.getHorizontal();
 	int box_h = (int)obj_box.getVertical();
+	int box_x = (int)new_pos.getX() + box_corner.getX();
+	int box_y = (int)new_pos.getY() + box_corner.getY();
 
 	// dir: 1 = up, -1 = down, 2 = left, -2 = right
 	/*if (dir == 1)

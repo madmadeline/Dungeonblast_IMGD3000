@@ -58,8 +58,8 @@ int main(int argc, char *argv[]) {
   // some enemies
   new Goblin(9, 32, 1);
   new Goblin(21, 27, -1);
-  new Goblin(28, 47, -2);
-  new Goblin(37, 39,2);
+  new Goblin(34, 47, -2);
+  new Goblin(37, 39, 2);
 
   // some pickups
   new BulletPickup(df::Vector(15, 33));

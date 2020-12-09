@@ -1,12 +1,22 @@
 <HEADER>
-frames 1
-width 1
-height 1
+frames 4
+width 9
+height 2
 color green
-slowdown 0
+slowdown 4
 </HEADER>
 <BODY>
-G
+ //^O^\\ 
+ \\   // 
+end
+ //^O^\\ 
+/ \   / \
+end
+ //^O^\\ 
+//     \\
+end
+ //^O^\\ 
+ X     X 
 end
 </BODY>
 <FOOTER>
