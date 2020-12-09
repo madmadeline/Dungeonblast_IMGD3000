@@ -151,3 +151,4 @@ void Goblin::move(int d) {
 	}
 }
 
+

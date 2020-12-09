@@ -180,7 +180,7 @@ void DungeonHero::advance(int dir) {
 	if (dir < 0)
 		checkDir = 2;
 	else
-		checkDir = 2;
+		checkDir = -2;
 
 	if (checkOverlapMap(this, new_pos, checkDir) == true) {
 		return;	// overlaps, doesn't move, else continue

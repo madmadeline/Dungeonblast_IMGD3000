@@ -15,14 +15,14 @@ bool checkOverlapMap(df::Object* p_o, df::Vector new_pos, int dir) {
 	int box_h = (int)obj_box.getVertical();
 
 	// dir: 1 = up, -1 = down, 2 = left, -2 = right
-	if (dir == 1)
+	/*if (dir == 1)
 		box_y = (int)floorf(new_pos.getY());
 	else if (dir == -1)
-		box_y = (int)ceilf(new_pos.getY());
+		box_y = (int)floorf(new_pos.getY());
 	else if (dir == 2)
 		box_x = (int)floorf(new_pos.getX());
 	else if (dir == -2)
-		box_x = (int)ceilf(new_pos.getX());
+		box_x = (int)ceilf(new_pos.getX());*/
 
 	std::string map_str = GAME_MAP.getAnimation().getSprite()->getFrame(0).getString();
 	int map_w = GAME_MAP.getAnimation().getSprite()->getFrame(0).getWidth();
