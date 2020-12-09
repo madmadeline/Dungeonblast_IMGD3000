@@ -35,7 +35,7 @@ DungeonHero::DungeonHero() {
 	//set init variables
 	fire_slowdown = 15;
 	fire_countdown = fire_slowdown;
-	move_slowdown = 2;
+	move_slowdown = 1;
 	move_countdown = move_slowdown;
 	hp = 100;
 	ammo = 20;
@@ -99,12 +99,12 @@ void DungeonHero::kbd(const df::EventKeyboard* p_keyboard_event){
 	case df::Keyboard::W:       // up
 		if (p_keyboard_event->getKeyboardAction() == df::KEY_DOWN)
 			currentDir = 1;
-			move(-1);
+			move(-0.5);
 		break;
 	case df::Keyboard::S:       // down
 		if (p_keyboard_event->getKeyboardAction() == df::KEY_DOWN)
 			currentDir = 2;
-			move(1);
+			move(0.5);
 		break;
 	case df::Keyboard::A:		//left
 		if (p_keyboard_event->getKeyboardAction() == df::KEY_DOWN)
@@ -142,17 +142,21 @@ void DungeonHero::kbd(const df::EventKeyboard* p_keyboard_event){
 }
 
 //MOVE THE HERO UP OR DOWN
-void DungeonHero::move(int dir){
+void DungeonHero::move(float dir){
 	// See if time to move.
 	if (move_countdown > 0)
 		return;
 	move_countdown = move_slowdown;
 
-	// If stays on window, allow move.
 	df::Vector new_pos(getPosition().getX(), getPosition().getY() + dir);
 
-	
-	if (checkOverlapMap(this, new_pos) == true) {
+	int checkDir = 0;
+	if (dir < 0)
+		checkDir = -1;
+	else
+		checkDir = 1;
+
+	if (checkOverlapMap(this, new_pos, checkDir) == true) {
 		return;	// overlaps, doesn't move, else continue
 	}
 
@@ -170,10 +174,15 @@ void DungeonHero::advance(int dir) {
 		return;
 	move_countdown = move_slowdown;
 
-	// If stays on window, allow move.
 	df::Vector new_pos(getPosition().getX() + dir, getPosition().getY());
 
-	if (checkOverlapMap(this, new_pos) == true) {
+	int checkDir = 0;
+	if (dir < 0)
+		checkDir = 2;
+	else
+		checkDir = 2;
+
+	if (checkOverlapMap(this, new_pos, checkDir) == true) {
 		return;	// overlaps, doesn't move, else continue
 	}
 

@@ -160,11 +160,12 @@
     <ClCompile Include="..\Fireball.cpp" />
     <ClCompile Include="..\FireballPickup.cpp" />
     <ClCompile Include="..\game.cpp" />
+    <ClCompile Include="..\GameUtility.cpp" />
     <ClCompile Include="..\Goblin.cpp" />
     <ClCompile Include="..\HealthPickup.cpp" />
     <ClCompile Include="..\Map.cpp" />
-    <ClCompile Include="..\GameUtility.cpp" />
     <ClCompile Include="..\StringEvent.cpp" />
+    <ClCompile Include="GameUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Bullet.h" />

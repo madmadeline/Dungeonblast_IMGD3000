@@ -104,10 +104,9 @@ void Goblin::move(int d) {
 	LM.writeLog("MOVING A GOBLIN");
 	switch (d) {
 	case 1:
-		// If stays on window, allow move.
 		new_pos.setY((new_pos.getY()) - 1);
 
-		if (checkOverlapMap(this, new_pos) == true) {
+		if (checkOverlapMap(this, new_pos, d) == true) {
 			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
 			dir = -dir;
 			return;	// overlaps, switch direction, else continue
@@ -117,10 +116,9 @@ void Goblin::move(int d) {
 		setVelocity(df::Vector(0, -0.25));
 		break;
 	case -1:
-		// If stays on window, allow move.
 		new_pos.setY((new_pos.getY()) + 2);
 
-		if (checkOverlapMap(this, new_pos) == true) {
+		if (checkOverlapMap(this, new_pos, d) == true) {
 			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
 			dir = -dir;
 			return;	// overlaps, switch direction, else continue
@@ -129,28 +127,27 @@ void Goblin::move(int d) {
 		setVelocity(df::Vector(0, 0.25));
 		break;
 	case 2:
-		// If stays on window, allow move.
 		new_pos.setX((new_pos.getX()) - 2);
 
-		if (checkOverlapMap(this, new_pos) == true) {
+		if (checkOverlapMap(this, new_pos, d) == true) {
 			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
 			dir = -dir;
 			return;	// overlaps, switch direction, else continue
 		}
 		//set velocity left
-		setVelocity(df::Vector(-0.25, 0));
+		setVelocity(df::Vector(-0.5, 0));
 		break;
 	case -2:
-		// If stays on window, allow move.
 		new_pos.setX((new_pos.getX()) + 2);
 
-		if (checkOverlapMap(this, new_pos) == true) {
+		if (checkOverlapMap(this, new_pos, d) == true) {
 			LM.writeLog("GOBLIN OVERLAPPED MAP!!");
 			dir = -dir;
 			return;	// overlaps, switch direction, else continue
 		}
 		//set velocity right
-		setVelocity(df::Vector(0.25, 0));
+		setVelocity(df::Vector(0.5, 0));
 		break;
 	}
 }
+

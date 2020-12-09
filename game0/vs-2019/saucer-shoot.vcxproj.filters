@@ -33,9 +33,6 @@
     <ClCompile Include="..\Map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\GameUtility.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\BulletPickup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -49,6 +46,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\StringEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GameUtility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,16 +80,16 @@
     <ClInclude Include="..\HealthPickup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\GameUtility.h">
+    <ClInclude Include="..\Equipped.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StringEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameUtility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Equipped.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\StringEvent.h">
+    <ClInclude Include="..\GameUtility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

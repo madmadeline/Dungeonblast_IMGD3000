@@ -1,159 +1,988 @@
-12:13:02    0 ****************************************************
-12:13:02    0 ** Dragonfly version 4.15 **
-12:13:02    0 ** Game engine started **
-12:13:02    0 ****************************************************
-12:13:02    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/map2.txt'.
-12:13:02    0 ResourceManager::loadSprite(): Sprite 'MapTest' loaded.
-12:13:02    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/hero-spr.txt'.
-12:13:02    0 ResourceManager::loadSprite(): Sprite 'Hero' loaded.
-12:13:02    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/goblin-spr.txt'.
-12:13:02    0 ResourceManager::loadSprite(): Sprite 'Goblin' loaded.
-12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
-12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
-12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
-12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
-12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-12:13:02    0 WorldManager::isValid(): Event df-collision handled automatically.
-12:13:02    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-12:13:02    2 MOVING A GOBLIN
-12:13:02    2 MOVING A GOBLIN
-12:13:02    2 GOBLIN OVERLAPPED MAP!!
-12:13:02    2 MOVING A GOBLIN
-12:13:02    2 MOVING A GOBLIN
-12:13:03    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 145 ms
-12:13:03    4 GameManager::run(): Can't keep up! frame_time 33 ms, split 135 ms
-12:13:03    5 MOVING A GOBLIN
-12:13:03    5 MOVING A GOBLIN
-12:13:03    5 MOVING A GOBLIN
-12:13:03    5 MOVING A GOBLIN
-12:13:03    5 GameManager::run(): Can't keep up! frame_time 33 ms, split 121 ms
-12:13:03    6 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
-12:13:03    7 GameManager::run(): Can't keep up! frame_time 33 ms, split 124 ms
-12:13:03    8 MOVING A GOBLIN
-12:13:03    8 MOVING A GOBLIN
-12:13:03    8 GOBLIN OVERLAPPED MAP!!
-12:13:03    8 MOVING A GOBLIN
-12:13:03    8 MOVING A GOBLIN
-12:13:03    8 GameManager::run(): Can't keep up! frame_time 33 ms, split 124 ms
-12:13:03    9 GameManager::run(): Can't keep up! frame_time 33 ms, split 132 ms
-12:13:03   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 136 ms
-12:13:03   11 MOVING A GOBLIN
-12:13:03   11 MOVING A GOBLIN
-12:13:03   11 MOVING A GOBLIN
-12:13:03   11 MOVING A GOBLIN
-12:13:04   11 GameManager::run(): Can't keep up! frame_time 33 ms, split 121 ms
-12:13:04   12 GameManager::run(): Can't keep up! frame_time 33 ms, split 158 ms
-12:13:04   13 GameManager::run(): Can't keep up! frame_time 33 ms, split 133 ms
-12:13:04   14 MOVING A GOBLIN
-12:13:04   14 MOVING A GOBLIN
-12:13:04   14 MOVING A GOBLIN
-12:13:04   14 MOVING A GOBLIN
-12:13:04   14 GameManager::run(): Can't keep up! frame_time 33 ms, split 113 ms
-12:13:04   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 144 ms
-12:13:04   16 GameManager::run(): Can't keep up! frame_time 33 ms, split 130 ms
-12:13:04   17 MOVING A GOBLIN
-12:13:04   17 MOVING A GOBLIN
-12:13:04   17 GOBLIN OVERLAPPED MAP!!
-12:13:04   17 MOVING A GOBLIN
-12:13:04   17 MOVING A GOBLIN
-12:13:04   17 GOBLIN OVERLAPPED MAP!!
-12:13:04   17 GameManager::run(): Can't keep up! frame_time 33 ms, split 120 ms
-12:13:04   18 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
-12:13:05   19 GameManager::run(): Can't keep up! frame_time 33 ms, split 123 ms
-12:13:05   20 MOVING A GOBLIN
-12:13:05   20 MOVING A GOBLIN
-12:13:05   20 MOVING A GOBLIN
-12:13:05   20 MOVING A GOBLIN
-12:13:05   20 GameManager::run(): Can't keep up! frame_time 33 ms, split 132 ms
-12:13:05   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 163 ms
-12:13:05   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 116 ms
-12:13:05   23 MOVING A GOBLIN
-12:13:05   23 GOBLIN OVERLAPPED MAP!!
-12:13:05   23 MOVING A GOBLIN
-12:13:05   23 MOVING A GOBLIN
-12:13:05   23 MOVING A GOBLIN
-12:13:05   23 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-12:13:05   24 GameManager::run(): Can't keep up! frame_time 33 ms, split 110 ms
-12:13:05   25 GameManager::run(): Can't keep up! frame_time 33 ms, split 106 ms
-12:13:05   26 MOVING A GOBLIN
-12:13:05   26 MOVING A GOBLIN
-12:13:05   26 GOBLIN OVERLAPPED MAP!!
-12:13:05   26 MOVING A GOBLIN
-12:13:05   26 MOVING A GOBLIN
-12:13:05   26 GameManager::run(): Can't keep up! frame_time 33 ms, split 165 ms
-12:13:06   27 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
-12:13:06   28 GameManager::run(): Can't keep up! frame_time 33 ms, split 155 ms
-12:13:06   29 MOVING A GOBLIN
-12:13:06   29 MOVING A GOBLIN
-12:13:06   29 MOVING A GOBLIN
-12:13:06   29 MOVING A GOBLIN
-12:13:06   29 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
-12:13:06   30 GameManager::run(): Can't keep up! frame_time 33 ms, split 106 ms
-12:13:06   31 GameManager::run(): Can't keep up! frame_time 33 ms, split 112 ms
-12:13:06   32 MOVING A GOBLIN
-12:13:06   32 MOVING A GOBLIN
-12:13:06   32 MOVING A GOBLIN
-12:13:06   32 MOVING A GOBLIN
-12:13:06   32 GameManager::run(): Can't keep up! frame_time 33 ms, split 172 ms
-12:13:06   33 GameManager::run(): Can't keep up! frame_time 33 ms, split 193 ms
-12:13:07   34 GameManager::run(): Can't keep up! frame_time 33 ms, split 154 ms
-12:13:07   35 MOVING A GOBLIN
-12:13:07   35 MOVING A GOBLIN
-12:13:07   35 GOBLIN OVERLAPPED MAP!!
-12:13:07   35 MOVING A GOBLIN
-12:13:07   35 MOVING A GOBLIN
-12:13:07   35 GameManager::run(): Can't keep up! frame_time 33 ms, split 117 ms
-12:13:07   36 GameManager::run(): Can't keep up! frame_time 33 ms, split 133 ms
-12:13:07   37 GameManager::run(): Can't keep up! frame_time 33 ms, split 135 ms
-12:13:07   38 MOVING A GOBLIN
-12:13:07   38 MOVING A GOBLIN
-12:13:07   38 MOVING A GOBLIN
-12:13:07   38 MOVING A GOBLIN
-12:13:07   38 GameManager::run(): Can't keep up! frame_time 33 ms, split 165 ms
-12:13:07   39 GameManager::run(): Can't keep up! frame_time 33 ms, split 182 ms
-12:13:07   40 GameManager::run(): Can't keep up! frame_time 33 ms, split 169 ms
-12:13:07   41 MOVING A GOBLIN
-12:13:07   41 MOVING A GOBLIN
-12:13:07   41 MOVING A GOBLIN
-12:13:07   41 MOVING A GOBLIN
-12:13:08   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 124 ms
-12:13:08   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 184 ms
-12:13:08   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 112 ms
-12:13:08   44 MOVING A GOBLIN
-12:13:08   44 MOVING A GOBLIN
-12:13:08   44 GOBLIN OVERLAPPED MAP!!
-12:13:08   44 MOVING A GOBLIN
-12:13:08   44 MOVING A GOBLIN
-12:13:08   44 GameManager::run(): Can't keep up! frame_time 33 ms, split 117 ms
-12:13:08   45 GameManager::run(): Can't keep up! frame_time 33 ms, split 128 ms
-12:13:08   46 GameManager::run(): Can't keep up! frame_time 33 ms, split 132 ms
-12:13:08   47 MOVING A GOBLIN
-12:13:08   47 MOVING A GOBLIN
-12:13:08   47 MOVING A GOBLIN
-12:13:08   47 MOVING A GOBLIN
-12:13:08   47 GameManager::run(): Can't keep up! frame_time 33 ms, split 113 ms
-12:13:09   48 GameManager::run(): Can't keep up! frame_time 33 ms, split 120 ms
-12:13:09   49 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-12:13:09   50 MOVING A GOBLIN
-12:13:09   50 MOVING A GOBLIN
-12:13:09   50 MOVING A GOBLIN
-12:13:09   50 MOVING A GOBLIN
-12:13:09   50 GameManager::run(): Can't keep up! frame_time 33 ms, split 143 ms
-12:13:09   51 GameManager::run(): Can't keep up! frame_time 33 ms, split 129 ms
-12:13:09   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 157 ms
-12:13:09   53 MOVING A GOBLIN
-12:13:09   53 MOVING A GOBLIN
-12:13:09   53 GOBLIN OVERLAPPED MAP!!
-12:13:09   53 MOVING A GOBLIN
-12:13:09   53 MOVING A GOBLIN
-12:13:09   53 GameManager::run(): Can't keep up! frame_time 33 ms, split 127 ms
-12:13:09   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
-12:13:09   55 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
-12:13:10   56 MOVING A GOBLIN
-12:13:10   56 MOVING A GOBLIN
-12:13:10   56 MOVING A GOBLIN
-12:13:10   56 MOVING A GOBLIN
-12:13:10   56 GameManager::run(): Can't keep up! frame_time 33 ms, split 247 ms
+16:22:13    0 ****************************************************
+16:22:13    0 ** Dragonfly version 4.15 **
+16:22:13    0 ** Game engine started **
+16:22:13    0 ****************************************************
+16:22:15    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/map2.txt'.
+16:22:15    0 ResourceManager::loadSprite(): Sprite 'MapTest' loaded.
+16:22:15    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/hero-spr.txt'.
+16:22:15    0 ResourceManager::loadSprite(): Sprite 'Hero' loaded.
+16:22:15    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/goblin-spr.txt'.
+16:22:15    0 ResourceManager::loadSprite(): Sprite 'Goblin' loaded.
+16:22:15    0 WorldManager::isValid(): Event df-collision handled automatically.
+16:22:15    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+16:22:15    0 WorldManager::isValid(): Event df-collision handled automatically.
+16:22:15    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+16:22:15    0 WorldManager::isValid(): Event df-collision handled automatically.
+16:22:15    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+16:22:15    0 WorldManager::isValid(): Event df-collision handled automatically.
+16:22:15    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+16:22:15    0 WorldManager::isValid(): Event df-collision handled automatically.
+16:22:15    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+16:22:15    1 GameManager::run(): Can't keep up! frame_time 33 ms, split 234 ms
+16:22:15    2 MOVING A GOBLIN
+16:22:15    2 MOVING A GOBLIN
+16:22:15    2 GOBLIN OVERLAPPED MAP!!
+16:22:15    2 MOVING A GOBLIN
+16:22:15    2 MOVING A GOBLIN
+16:22:15    2 GameManager::run(): Can't keep up! frame_time 33 ms, split 229 ms
+16:22:16    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 235 ms
+16:22:16    4 GameManager::run(): Can't keep up! frame_time 33 ms, split 235 ms
+16:22:16    5 MOVING A GOBLIN
+16:22:16    5 MOVING A GOBLIN
+16:22:16    5 MOVING A GOBLIN
+16:22:16    5 MOVING A GOBLIN
+16:22:16    5 GameManager::run(): Can't keep up! frame_time 33 ms, split 238 ms
+16:22:16    6 GameManager::run(): Can't keep up! frame_time 33 ms, split 233 ms
+16:22:17    7 GameManager::run(): Can't keep up! frame_time 33 ms, split 232 ms
+16:22:17    8 MOVING A GOBLIN
+16:22:17    8 MOVING A GOBLIN
+16:22:17    8 GOBLIN OVERLAPPED MAP!!
+16:22:17    8 MOVING A GOBLIN
+16:22:17    8 MOVING A GOBLIN
+16:22:17    8 GameManager::run(): Can't keep up! frame_time 33 ms, split 228 ms
+16:22:17    9 GameManager::run(): Can't keep up! frame_time 33 ms, split 238 ms
+16:22:17   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:17   11 MOVING A GOBLIN
+16:22:17   11 MOVING A GOBLIN
+16:22:17   11 MOVING A GOBLIN
+16:22:17   11 MOVING A GOBLIN
+16:22:17   11 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:17   12 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:17   13 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:17   14 MOVING A GOBLIN
+16:22:17   14 MOVING A GOBLIN
+16:22:17   14 MOVING A GOBLIN
+16:22:17   14 MOVING A GOBLIN
+16:22:17   14 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:18   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:18   16 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:18   17 MOVING A GOBLIN
+16:22:18   17 MOVING A GOBLIN
+16:22:18   17 GOBLIN OVERLAPPED MAP!!
+16:22:18   17 MOVING A GOBLIN
+16:22:18   17 MOVING A GOBLIN
+16:22:18   17 GOBLIN OVERLAPPED MAP!!
+16:22:18   17 GameManager::run(): Can't keep up! frame_time 33 ms, split 90 ms
+16:22:18   18 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:18   19 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:18   20 MOVING A GOBLIN
+16:22:18   20 MOVING A GOBLIN
+16:22:18   20 MOVING A GOBLIN
+16:22:18   20 MOVING A GOBLIN
+16:22:18   20 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:18   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:18   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:18   23 MOVING A GOBLIN
+16:22:18   23 GOBLIN OVERLAPPED MAP!!
+16:22:18   23 MOVING A GOBLIN
+16:22:18   23 MOVING A GOBLIN
+16:22:18   23 MOVING A GOBLIN
+16:22:18   23 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:18   24 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:18   25 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:18   26 MOVING A GOBLIN
+16:22:18   26 MOVING A GOBLIN
+16:22:18   26 GOBLIN OVERLAPPED MAP!!
+16:22:18   26 MOVING A GOBLIN
+16:22:18   26 MOVING A GOBLIN
+16:22:18   26 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:18   27 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:19   28 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:19   29 MOVING A GOBLIN
+16:22:19   29 MOVING A GOBLIN
+16:22:19   29 MOVING A GOBLIN
+16:22:19   29 MOVING A GOBLIN
+16:22:19   29 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:19   30 GameManager::run(): Can't keep up! frame_time 33 ms, split 82 ms
+16:22:19   31 GameManager::run(): Can't keep up! frame_time 33 ms, split 78 ms
+16:22:19   32 MOVING A GOBLIN
+16:22:19   32 MOVING A GOBLIN
+16:22:19   32 MOVING A GOBLIN
+16:22:19   32 MOVING A GOBLIN
+16:22:19   32 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:19   33 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:19   34 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:19   35 MOVING A GOBLIN
+16:22:19   35 MOVING A GOBLIN
+16:22:19   35 GOBLIN OVERLAPPED MAP!!
+16:22:19   35 MOVING A GOBLIN
+16:22:19   35 MOVING A GOBLIN
+16:22:19   35 GameManager::run(): Can't keep up! frame_time 33 ms, split 78 ms
+16:22:19   36 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:19   37 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:19   38 MOVING A GOBLIN
+16:22:19   38 MOVING A GOBLIN
+16:22:19   38 MOVING A GOBLIN
+16:22:19   38 MOVING A GOBLIN
+16:22:19   38 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:19   39 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:19   40 GameManager::run(): Can't keep up! frame_time 33 ms, split 92 ms
+16:22:19   41 MOVING A GOBLIN
+16:22:19   41 MOVING A GOBLIN
+16:22:19   41 MOVING A GOBLIN
+16:22:19   41 MOVING A GOBLIN
+16:22:20   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:20   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:20   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:20   44 MOVING A GOBLIN
+16:22:20   44 MOVING A GOBLIN
+16:22:20   44 GOBLIN OVERLAPPED MAP!!
+16:22:20   44 MOVING A GOBLIN
+16:22:20   44 MOVING A GOBLIN
+16:22:20   44 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:20   45 GameManager::run(): Can't keep up! frame_time 33 ms, split 80 ms
+16:22:20   46 GameManager::run(): Can't keep up! frame_time 33 ms, split 79 ms
+16:22:20   47 MOVING A GOBLIN
+16:22:20   47 MOVING A GOBLIN
+16:22:20   47 MOVING A GOBLIN
+16:22:20   47 MOVING A GOBLIN
+16:22:20   47 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:20   48 GameManager::run(): Can't keep up! frame_time 33 ms, split 77 ms
+16:22:20   49 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:20   50 MOVING A GOBLIN
+16:22:20   50 MOVING A GOBLIN
+16:22:20   50 MOVING A GOBLIN
+16:22:20   50 MOVING A GOBLIN
+16:22:20   50 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:20   51 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:20   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:20   53 MOVING A GOBLIN
+16:22:20   53 MOVING A GOBLIN
+16:22:20   53 GOBLIN OVERLAPPED MAP!!
+16:22:20   53 MOVING A GOBLIN
+16:22:20   53 MOVING A GOBLIN
+16:22:20   53 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:20   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:21   55 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
+16:22:21   56 MOVING A GOBLIN
+16:22:21   56 MOVING A GOBLIN
+16:22:21   56 MOVING A GOBLIN
+16:22:21   56 MOVING A GOBLIN
+16:22:21   56 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:21   57 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:21   58 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:21   59 MOVING A GOBLIN
+16:22:21   59 MOVING A GOBLIN
+16:22:21   59 MOVING A GOBLIN
+16:22:21   59 MOVING A GOBLIN
+16:22:21   59 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:21   60 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:21   61 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:21   62 MOVING A GOBLIN
+16:22:21   62 GOBLIN OVERLAPPED MAP!!
+16:22:21   62 MOVING A GOBLIN
+16:22:21   62 GOBLIN OVERLAPPED MAP!!
+16:22:21   62 MOVING A GOBLIN
+16:22:21   62 MOVING A GOBLIN
+16:22:21   62 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:21   63 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:21   64 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:21   65 MOVING A GOBLIN
+16:22:21   65 MOVING A GOBLIN
+16:22:21   65 MOVING A GOBLIN
+16:22:21   65 MOVING A GOBLIN
+16:22:21   65 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:21   66 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:21   67 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:21   68 MOVING A GOBLIN
+16:22:21   68 MOVING A GOBLIN
+16:22:21   68 MOVING A GOBLIN
+16:22:21   68 MOVING A GOBLIN
+16:22:21   68 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:22   69 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:22   70 GameManager::run(): Can't keep up! frame_time 33 ms, split 93 ms
+16:22:22   71 MOVING A GOBLIN
+16:22:22   71 MOVING A GOBLIN
+16:22:22   71 GOBLIN OVERLAPPED MAP!!
+16:22:22   71 MOVING A GOBLIN
+16:22:22   71 MOVING A GOBLIN
+16:22:22   71 GameManager::run(): Can't keep up! frame_time 33 ms, split 85 ms
+16:22:22   72 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:22   73 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:22   74 MOVING A GOBLIN
+16:22:22   74 MOVING A GOBLIN
+16:22:22   74 MOVING A GOBLIN
+16:22:22   74 MOVING A GOBLIN
+16:22:22   74 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:22   75 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:22   76 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:22   77 MOVING A GOBLIN
+16:22:22   77 MOVING A GOBLIN
+16:22:22   77 MOVING A GOBLIN
+16:22:22   77 MOVING A GOBLIN
+16:22:22   77 GameManager::run(): Can't keep up! frame_time 33 ms, split 101 ms
+16:22:22   78 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:22   79 GameManager::run(): Can't keep up! frame_time 33 ms, split 102 ms
+16:22:22   80 MOVING A GOBLIN
+16:22:22   80 MOVING A GOBLIN
+16:22:22   80 GOBLIN OVERLAPPED MAP!!
+16:22:22   80 MOVING A GOBLIN
+16:22:22   80 MOVING A GOBLIN
+16:22:22   80 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:23   81 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:23   82 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
+16:22:23   83 MOVING A GOBLIN
+16:22:23   83 MOVING A GOBLIN
+16:22:23   83 MOVING A GOBLIN
+16:22:23   83 MOVING A GOBLIN
+16:22:23   83 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:23   84 GameManager::run(): Can't keep up! frame_time 33 ms, split 81 ms
+16:22:23   85 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
+16:22:23   86 MOVING A GOBLIN
+16:22:23   86 MOVING A GOBLIN
+16:22:23   86 MOVING A GOBLIN
+16:22:23   86 MOVING A GOBLIN
+16:22:23   86 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:23   87 GameManager::run(): Can't keep up! frame_time 33 ms, split 93 ms
+16:22:23   88 GameManager::run(): Can't keep up! frame_time 33 ms, split 80 ms
+16:22:23   89 MOVING A GOBLIN
+16:22:23   89 MOVING A GOBLIN
+16:22:23   89 GOBLIN OVERLAPPED MAP!!
+16:22:23   89 MOVING A GOBLIN
+16:22:23   89 MOVING A GOBLIN
+16:22:23   89 GameManager::run(): Can't keep up! frame_time 33 ms, split 90 ms
+16:22:23   90 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:23   91 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:23   92 MOVING A GOBLIN
+16:22:23   92 MOVING A GOBLIN
+16:22:23   92 MOVING A GOBLIN
+16:22:23   92 MOVING A GOBLIN
+16:22:23   92 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:23   93 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:24   94 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:24   95 MOVING A GOBLIN
+16:22:24   95 MOVING A GOBLIN
+16:22:24   95 MOVING A GOBLIN
+16:22:24   95 MOVING A GOBLIN
+16:22:24   95 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:24   96 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:24   97 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:24   98 MOVING A GOBLIN
+16:22:24   98 MOVING A GOBLIN
+16:22:24   98 GOBLIN OVERLAPPED MAP!!
+16:22:24   98 MOVING A GOBLIN
+16:22:24   98 MOVING A GOBLIN
+16:22:24   98 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:24   99 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:24  100 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:24  101 MOVING A GOBLIN
+16:22:24  101 GOBLIN OVERLAPPED MAP!!
+16:22:24  101 MOVING A GOBLIN
+16:22:24  101 MOVING A GOBLIN
+16:22:24  101 MOVING A GOBLIN
+16:22:24  101 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:24  102 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:24  103 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:24  104 MOVING A GOBLIN
+16:22:24  104 MOVING A GOBLIN
+16:22:24  104 MOVING A GOBLIN
+16:22:24  104 MOVING A GOBLIN
+16:22:24  104 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:24  105 GameManager::run(): Can't keep up! frame_time 33 ms, split 84 ms
+16:22:24  106 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:24  107 MOVING A GOBLIN
+16:22:24  107 MOVING A GOBLIN
+16:22:24  107 GOBLIN OVERLAPPED MAP!!
+16:22:24  107 MOVING A GOBLIN
+16:22:24  107 MOVING A GOBLIN
+16:22:25  107 GameManager::run(): Can't keep up! frame_time 33 ms, split 124 ms
+16:22:25  108 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:25  109 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:25  110 MOVING A GOBLIN
+16:22:25  110 MOVING A GOBLIN
+16:22:25  110 MOVING A GOBLIN
+16:22:25  110 GOBLIN OVERLAPPED MAP!!
+16:22:25  110 MOVING A GOBLIN
+16:22:25  110 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:25  111 GameManager::run(): Can't keep up! frame_time 33 ms, split 90 ms
+16:22:25  112 GameManager::run(): Can't keep up! frame_time 33 ms, split 92 ms
+16:22:25  113 MOVING A GOBLIN
+16:22:25  113 MOVING A GOBLIN
+16:22:25  113 MOVING A GOBLIN
+16:22:25  113 MOVING A GOBLIN
+16:22:25  113 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:25  114 GameManager::run(): Can't keep up! frame_time 33 ms, split 78 ms
+16:22:25  115 GameManager::run(): Can't keep up! frame_time 33 ms, split 95 ms
+16:22:25  116 MOVING A GOBLIN
+16:22:25  116 MOVING A GOBLIN
+16:22:25  116 GOBLIN OVERLAPPED MAP!!
+16:22:25  116 MOVING A GOBLIN
+16:22:25  116 MOVING A GOBLIN
+16:22:25  116 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:25  117 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:25  118 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:25  119 MOVING A GOBLIN
+16:22:25  119 MOVING A GOBLIN
+16:22:25  119 MOVING A GOBLIN
+16:22:25  119 MOVING A GOBLIN
+16:22:25  119 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:26  120 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:26  121 GameManager::run(): Can't keep up! frame_time 33 ms, split 76 ms
+16:22:26  122 MOVING A GOBLIN
+16:22:26  122 MOVING A GOBLIN
+16:22:26  122 MOVING A GOBLIN
+16:22:26  122 MOVING A GOBLIN
+16:22:26  122 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:26  123 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:26  124 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:26  125 MOVING A GOBLIN
+16:22:26  125 MOVING A GOBLIN
+16:22:26  125 GOBLIN OVERLAPPED MAP!!
+16:22:26  125 MOVING A GOBLIN
+16:22:26  125 MOVING A GOBLIN
+16:22:26  125 GameManager::run(): Can't keep up! frame_time 33 ms, split 91 ms
+16:22:26  126 GameManager::run(): Can't keep up! frame_time 33 ms, split 179 ms
+16:22:26  127 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:26  128 MOVING A GOBLIN
+16:22:26  128 MOVING A GOBLIN
+16:22:26  128 MOVING A GOBLIN
+16:22:26  128 MOVING A GOBLIN
+16:22:26  128 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:26  129 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:26  130 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:26  131 MOVING A GOBLIN
+16:22:26  131 MOVING A GOBLIN
+16:22:26  131 MOVING A GOBLIN
+16:22:26  131 MOVING A GOBLIN
+16:22:26  131 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:27  132 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:27  133 GameManager::run(): Can't keep up! frame_time 33 ms, split 107 ms
+16:22:27  134 MOVING A GOBLIN
+16:22:27  134 MOVING A GOBLIN
+16:22:27  134 GOBLIN OVERLAPPED MAP!!
+16:22:27  134 MOVING A GOBLIN
+16:22:27  134 MOVING A GOBLIN
+16:22:27  134 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:27  135 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
+16:22:27  136 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:27  137 MOVING A GOBLIN
+16:22:27  137 MOVING A GOBLIN
+16:22:27  137 MOVING A GOBLIN
+16:22:27  137 MOVING A GOBLIN
+16:22:27  137 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:27  138 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:27  139 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:27  140 MOVING A GOBLIN
+16:22:27  140 GOBLIN OVERLAPPED MAP!!
+16:22:27  140 MOVING A GOBLIN
+16:22:27  140 MOVING A GOBLIN
+16:22:27  140 MOVING A GOBLIN
+16:22:27  140 GameManager::run(): Can't keep up! frame_time 33 ms, split 96 ms
+16:22:27  141 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:27  142 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:27  143 MOVING A GOBLIN
+16:22:27  143 MOVING A GOBLIN
+16:22:27  143 GOBLIN OVERLAPPED MAP!!
+16:22:27  143 MOVING A GOBLIN
+16:22:27  143 MOVING A GOBLIN
+16:22:27  143 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:27  144 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:28  145 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:28  146 MOVING A GOBLIN
+16:22:28  146 MOVING A GOBLIN
+16:22:28  146 MOVING A GOBLIN
+16:22:28  146 MOVING A GOBLIN
+16:22:28  146 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:28  147 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:28  148 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:28  149 MOVING A GOBLIN
+16:22:28  149 MOVING A GOBLIN
+16:22:28  149 MOVING A GOBLIN
+16:22:28  149 MOVING A GOBLIN
+16:22:28  149 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:28  150 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:28  151 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:28  152 MOVING A GOBLIN
+16:22:28  152 MOVING A GOBLIN
+16:22:28  152 GOBLIN OVERLAPPED MAP!!
+16:22:28  152 MOVING A GOBLIN
+16:22:28  152 MOVING A GOBLIN
+16:22:28  152 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
+16:22:28  153 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
+16:22:28  154 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:28  155 MOVING A GOBLIN
+16:22:28  155 MOVING A GOBLIN
+16:22:28  155 MOVING A GOBLIN
+16:22:28  155 MOVING A GOBLIN
+16:22:28  155 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:28  156 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:28  157 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:28  158 MOVING A GOBLIN
+16:22:28  158 MOVING A GOBLIN
+16:22:28  158 MOVING A GOBLIN
+16:22:28  158 MOVING A GOBLIN
+16:22:28  158 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:29  159 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
+16:22:29  160 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:29  161 MOVING A GOBLIN
+16:22:29  161 MOVING A GOBLIN
+16:22:29  161 GOBLIN OVERLAPPED MAP!!
+16:22:29  161 MOVING A GOBLIN
+16:22:29  161 MOVING A GOBLIN
+16:22:29  161 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:29  162 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:29  163 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:29  164 MOVING A GOBLIN
+16:22:29  164 MOVING A GOBLIN
+16:22:29  164 MOVING A GOBLIN
+16:22:29  164 MOVING A GOBLIN
+16:22:29  164 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:29  165 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:29  166 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:29  167 MOVING A GOBLIN
+16:22:29  167 MOVING A GOBLIN
+16:22:29  167 MOVING A GOBLIN
+16:22:29  167 MOVING A GOBLIN
+16:22:29  167 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:29  168 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:29  169 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:29  170 MOVING A GOBLIN
+16:22:29  170 MOVING A GOBLIN
+16:22:29  170 GOBLIN OVERLAPPED MAP!!
+16:22:29  170 MOVING A GOBLIN
+16:22:29  170 MOVING A GOBLIN
+16:22:29  170 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:29  171 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:29  172 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
+16:22:29  173 MOVING A GOBLIN
+16:22:29  173 MOVING A GOBLIN
+16:22:29  173 MOVING A GOBLIN
+16:22:29  173 MOVING A GOBLIN
+16:22:30  173 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:30  174 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:30  175 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
+16:22:30  176 MOVING A GOBLIN
+16:22:30  176 MOVING A GOBLIN
+16:22:30  176 MOVING A GOBLIN
+16:22:30  176 MOVING A GOBLIN
+16:22:30  176 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:30  177 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:30  178 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:30  179 MOVING A GOBLIN
+16:22:30  179 GOBLIN OVERLAPPED MAP!!
+16:22:30  179 MOVING A GOBLIN
+16:22:30  179 GOBLIN OVERLAPPED MAP!!
+16:22:30  179 MOVING A GOBLIN
+16:22:30  179 MOVING A GOBLIN
+16:22:30  179 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:30  180 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:30  181 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:30  182 MOVING A GOBLIN
+16:22:30  182 MOVING A GOBLIN
+16:22:30  182 MOVING A GOBLIN
+16:22:30  182 MOVING A GOBLIN
+16:22:30  182 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:30  183 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:30  184 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:30  185 MOVING A GOBLIN
+16:22:30  185 MOVING A GOBLIN
+16:22:30  185 MOVING A GOBLIN
+16:22:30  185 MOVING A GOBLIN
+16:22:30  185 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:31  186 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:31  187 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:31  188 MOVING A GOBLIN
+16:22:31  188 MOVING A GOBLIN
+16:22:31  188 GOBLIN OVERLAPPED MAP!!
+16:22:31  188 MOVING A GOBLIN
+16:22:31  188 MOVING A GOBLIN
+16:22:31  188 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:31  189 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:31  190 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:31  191 MOVING A GOBLIN
+16:22:31  191 MOVING A GOBLIN
+16:22:31  191 MOVING A GOBLIN
+16:22:31  191 MOVING A GOBLIN
+16:22:31  191 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:31  192 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:31  193 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:31  194 MOVING A GOBLIN
+16:22:31  194 MOVING A GOBLIN
+16:22:31  194 MOVING A GOBLIN
+16:22:31  194 MOVING A GOBLIN
+16:22:31  194 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
+16:22:31  195 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:31  196 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:31  197 MOVING A GOBLIN
+16:22:31  197 MOVING A GOBLIN
+16:22:31  197 GOBLIN OVERLAPPED MAP!!
+16:22:31  197 MOVING A GOBLIN
+16:22:31  197 MOVING A GOBLIN
+16:22:31  197 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:31  198 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:31  199 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:31  200 MOVING A GOBLIN
+16:22:31  200 MOVING A GOBLIN
+16:22:31  200 MOVING A GOBLIN
+16:22:31  200 MOVING A GOBLIN
+16:22:32  200 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:32  201 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:32  202 GameManager::run(): Can't keep up! frame_time 33 ms, split 107 ms
+16:22:32  203 MOVING A GOBLIN
+16:22:32  203 MOVING A GOBLIN
+16:22:32  203 MOVING A GOBLIN
+16:22:32  203 MOVING A GOBLIN
+16:22:32  203 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:32  204 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:32  205 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:32  206 MOVING A GOBLIN
+16:22:32  206 MOVING A GOBLIN
+16:22:32  206 GOBLIN OVERLAPPED MAP!!
+16:22:32  206 MOVING A GOBLIN
+16:22:32  206 MOVING A GOBLIN
+16:22:32  206 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:32  207 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:32  208 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:32  209 MOVING A GOBLIN
+16:22:32  209 MOVING A GOBLIN
+16:22:32  209 MOVING A GOBLIN
+16:22:32  209 MOVING A GOBLIN
+16:22:32  209 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:32  210 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:32  211 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:32  212 MOVING A GOBLIN
+16:22:32  212 MOVING A GOBLIN
+16:22:32  212 MOVING A GOBLIN
+16:22:32  212 MOVING A GOBLIN
+16:22:32  212 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:32  213 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:33  214 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:33  215 MOVING A GOBLIN
+16:22:33  215 MOVING A GOBLIN
+16:22:33  215 GOBLIN OVERLAPPED MAP!!
+16:22:33  215 MOVING A GOBLIN
+16:22:33  215 MOVING A GOBLIN
+16:22:33  215 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:33  216 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:33  217 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:33  218 MOVING A GOBLIN
+16:22:33  218 GOBLIN OVERLAPPED MAP!!
+16:22:33  218 MOVING A GOBLIN
+16:22:33  218 MOVING A GOBLIN
+16:22:33  218 MOVING A GOBLIN
+16:22:33  218 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:33  219 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:33  220 GameManager::run(): Can't keep up! frame_time 33 ms, split 92 ms
+16:22:33  221 MOVING A GOBLIN
+16:22:33  221 MOVING A GOBLIN
+16:22:33  221 MOVING A GOBLIN
+16:22:33  221 MOVING A GOBLIN
+16:22:33  221 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:33  222 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:33  223 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
+16:22:33  224 MOVING A GOBLIN
+16:22:33  224 MOVING A GOBLIN
+16:22:33  224 GOBLIN OVERLAPPED MAP!!
+16:22:33  224 MOVING A GOBLIN
+16:22:33  224 MOVING A GOBLIN
+16:22:33  224 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:33  225 GameManager::run(): Can't keep up! frame_time 33 ms, split 105 ms
+16:22:33  226 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:33  227 MOVING A GOBLIN
+16:22:33  227 MOVING A GOBLIN
+16:22:33  227 MOVING A GOBLIN
+16:22:33  227 GOBLIN OVERLAPPED MAP!!
+16:22:33  227 MOVING A GOBLIN
+16:22:34  227 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:34  228 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:34  229 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:34  230 MOVING A GOBLIN
+16:22:34  230 MOVING A GOBLIN
+16:22:34  230 MOVING A GOBLIN
+16:22:34  230 MOVING A GOBLIN
+16:22:34  230 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:34  231 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:34  232 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:34  233 MOVING A GOBLIN
+16:22:34  233 MOVING A GOBLIN
+16:22:34  233 GOBLIN OVERLAPPED MAP!!
+16:22:34  233 MOVING A GOBLIN
+16:22:34  233 MOVING A GOBLIN
+16:22:34  233 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:34  234 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:34  235 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:34  236 MOVING A GOBLIN
+16:22:34  236 MOVING A GOBLIN
+16:22:34  236 MOVING A GOBLIN
+16:22:34  236 MOVING A GOBLIN
+16:22:34  236 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:34  237 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:34  238 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:34  239 MOVING A GOBLIN
+16:22:34  239 MOVING A GOBLIN
+16:22:34  239 MOVING A GOBLIN
+16:22:34  239 MOVING A GOBLIN
+16:22:34  239 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:35  240 GameManager::run(): Can't keep up! frame_time 33 ms, split 90 ms
+16:22:35  241 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:35  242 MOVING A GOBLIN
+16:22:35  242 MOVING A GOBLIN
+16:22:35  242 GOBLIN OVERLAPPED MAP!!
+16:22:35  242 MOVING A GOBLIN
+16:22:35  242 MOVING A GOBLIN
+16:22:35  242 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:35  243 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:35  244 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:35  245 MOVING A GOBLIN
+16:22:35  245 MOVING A GOBLIN
+16:22:35  245 MOVING A GOBLIN
+16:22:35  245 MOVING A GOBLIN
+16:22:35  245 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:35  246 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:35  247 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:35  248 MOVING A GOBLIN
+16:22:35  248 MOVING A GOBLIN
+16:22:35  248 MOVING A GOBLIN
+16:22:35  248 MOVING A GOBLIN
+16:22:35  248 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
+16:22:35  249 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:35  250 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:35  251 MOVING A GOBLIN
+16:22:35  251 MOVING A GOBLIN
+16:22:35  251 GOBLIN OVERLAPPED MAP!!
+16:22:35  251 MOVING A GOBLIN
+16:22:35  251 MOVING A GOBLIN
+16:22:35  251 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:35  252 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:36  253 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:36  254 MOVING A GOBLIN
+16:22:36  254 MOVING A GOBLIN
+16:22:36  254 MOVING A GOBLIN
+16:22:36  254 MOVING A GOBLIN
+16:22:36  254 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:36  255 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:36  256 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:36  257 MOVING A GOBLIN
+16:22:36  257 GOBLIN OVERLAPPED MAP!!
+16:22:36  257 MOVING A GOBLIN
+16:22:36  257 MOVING A GOBLIN
+16:22:36  257 MOVING A GOBLIN
+16:22:36  257 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:36  258 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:36  259 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:36  260 MOVING A GOBLIN
+16:22:36  260 MOVING A GOBLIN
+16:22:36  260 GOBLIN OVERLAPPED MAP!!
+16:22:36  260 MOVING A GOBLIN
+16:22:36  260 MOVING A GOBLIN
+16:22:36  260 GameManager::run(): Can't keep up! frame_time 33 ms, split 91 ms
+16:22:36  261 GameManager::run(): Can't keep up! frame_time 33 ms, split 76 ms
+16:22:36  262 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:36  263 MOVING A GOBLIN
+16:22:36  263 MOVING A GOBLIN
+16:22:36  263 MOVING A GOBLIN
+16:22:36  263 MOVING A GOBLIN
+16:22:36  263 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:36  264 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+16:22:36  265 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:36  266 MOVING A GOBLIN
+16:22:36  266 MOVING A GOBLIN
+16:22:36  266 MOVING A GOBLIN
+16:22:36  266 MOVING A GOBLIN
+16:22:36  266 GOBLIN OVERLAPPED MAP!!
+16:22:36  266 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:37  267 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:37  268 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:37  269 MOVING A GOBLIN
+16:22:37  269 MOVING A GOBLIN
+16:22:37  269 GOBLIN OVERLAPPED MAP!!
+16:22:37  269 MOVING A GOBLIN
+16:22:37  269 MOVING A GOBLIN
+16:22:37  269 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:37  270 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:37  271 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:37  272 MOVING A GOBLIN
+16:22:37  272 MOVING A GOBLIN
+16:22:37  272 MOVING A GOBLIN
+16:22:37  272 MOVING A GOBLIN
+16:22:37  272 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:37  273 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:37  274 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:37  275 MOVING A GOBLIN
+16:22:37  275 MOVING A GOBLIN
+16:22:37  275 MOVING A GOBLIN
+16:22:37  275 MOVING A GOBLIN
+16:22:37  275 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:37  276 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:37  277 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:37  278 MOVING A GOBLIN
+16:22:37  278 MOVING A GOBLIN
+16:22:37  278 GOBLIN OVERLAPPED MAP!!
+16:22:37  278 MOVING A GOBLIN
+16:22:37  278 MOVING A GOBLIN
+16:22:37  278 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:37  279 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:37  280 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
+16:22:37  281 MOVING A GOBLIN
+16:22:37  281 MOVING A GOBLIN
+16:22:37  281 MOVING A GOBLIN
+16:22:37  281 MOVING A GOBLIN
+16:22:38  281 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:38  282 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:38  283 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:38  284 MOVING A GOBLIN
+16:22:38  284 MOVING A GOBLIN
+16:22:38  284 MOVING A GOBLIN
+16:22:38  284 MOVING A GOBLIN
+16:22:38  284 GameManager::run(): Can't keep up! frame_time 33 ms, split 84 ms
+16:22:38  285 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:38  286 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:38  287 MOVING A GOBLIN
+16:22:38  287 MOVING A GOBLIN
+16:22:38  287 GOBLIN OVERLAPPED MAP!!
+16:22:38  287 MOVING A GOBLIN
+16:22:38  287 MOVING A GOBLIN
+16:22:38  287 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:38  288 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:38  289 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:38  290 MOVING A GOBLIN
+16:22:38  290 MOVING A GOBLIN
+16:22:38  290 MOVING A GOBLIN
+16:22:38  290 MOVING A GOBLIN
+16:22:38  290 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:38  291 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:38  292 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:38  293 MOVING A GOBLIN
+16:22:38  293 MOVING A GOBLIN
+16:22:38  293 MOVING A GOBLIN
+16:22:38  293 MOVING A GOBLIN
+16:22:38  293 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:38  294 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:39  295 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:39  296 MOVING A GOBLIN
+16:22:39  296 GOBLIN OVERLAPPED MAP!!
+16:22:39  296 MOVING A GOBLIN
+16:22:39  296 GOBLIN OVERLAPPED MAP!!
+16:22:39  296 MOVING A GOBLIN
+16:22:39  296 MOVING A GOBLIN
+16:22:39  296 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:39  297 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:39  298 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:39  299 MOVING A GOBLIN
+16:22:39  299 MOVING A GOBLIN
+16:22:39  299 MOVING A GOBLIN
+16:22:39  299 MOVING A GOBLIN
+16:22:39  299 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:39  300 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:39  301 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:39  302 MOVING A GOBLIN
+16:22:39  302 MOVING A GOBLIN
+16:22:39  302 MOVING A GOBLIN
+16:22:39  302 MOVING A GOBLIN
+16:22:39  302 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:39  303 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:39  304 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:39  305 MOVING A GOBLIN
+16:22:39  305 MOVING A GOBLIN
+16:22:39  305 GOBLIN OVERLAPPED MAP!!
+16:22:39  305 MOVING A GOBLIN
+16:22:39  305 MOVING A GOBLIN
+16:22:39  305 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:39  306 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:39  307 GameManager::run(): Can't keep up! frame_time 33 ms, split 92 ms
+16:22:39  308 MOVING A GOBLIN
+16:22:39  308 MOVING A GOBLIN
+16:22:39  308 MOVING A GOBLIN
+16:22:39  308 MOVING A GOBLIN
+16:22:39  308 GameManager::run(): Can't keep up! frame_time 33 ms, split 77 ms
+16:22:40  309 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:40  310 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
+16:22:40  311 MOVING A GOBLIN
+16:22:40  311 MOVING A GOBLIN
+16:22:40  311 MOVING A GOBLIN
+16:22:40  311 MOVING A GOBLIN
+16:22:40  311 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:40  312 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:40  313 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:40  314 MOVING A GOBLIN
+16:22:40  314 MOVING A GOBLIN
+16:22:40  314 GOBLIN OVERLAPPED MAP!!
+16:22:40  314 MOVING A GOBLIN
+16:22:40  314 MOVING A GOBLIN
+16:22:40  314 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:40  315 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:40  316 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:40  317 MOVING A GOBLIN
+16:22:40  317 MOVING A GOBLIN
+16:22:40  317 MOVING A GOBLIN
+16:22:40  317 MOVING A GOBLIN
+16:22:40  317 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:40  318 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:40  319 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:40  320 MOVING A GOBLIN
+16:22:40  320 MOVING A GOBLIN
+16:22:40  320 MOVING A GOBLIN
+16:22:40  320 MOVING A GOBLIN
+16:22:40  320 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:40  321 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:40  322 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:40  323 MOVING A GOBLIN
+16:22:40  323 MOVING A GOBLIN
+16:22:40  323 GOBLIN OVERLAPPED MAP!!
+16:22:40  323 MOVING A GOBLIN
+16:22:40  323 MOVING A GOBLIN
+16:22:41  323 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:41  324 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:41  325 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:41  326 MOVING A GOBLIN
+16:22:41  326 MOVING A GOBLIN
+16:22:41  326 MOVING A GOBLIN
+16:22:41  326 MOVING A GOBLIN
+16:22:41  326 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:41  327 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:41  328 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:41  329 MOVING A GOBLIN
+16:22:41  329 MOVING A GOBLIN
+16:22:41  329 MOVING A GOBLIN
+16:22:41  329 MOVING A GOBLIN
+16:22:41  329 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:41  330 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:41  331 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:41  332 MOVING A GOBLIN
+16:22:41  332 MOVING A GOBLIN
+16:22:41  332 GOBLIN OVERLAPPED MAP!!
+16:22:41  332 MOVING A GOBLIN
+16:22:41  332 MOVING A GOBLIN
+16:22:41  332 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:41  333 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:41  334 GameManager::run(): Can't keep up! frame_time 33 ms, split 106 ms
+16:22:41  335 MOVING A GOBLIN
+16:22:41  335 GOBLIN OVERLAPPED MAP!!
+16:22:41  335 MOVING A GOBLIN
+16:22:41  335 MOVING A GOBLIN
+16:22:41  335 MOVING A GOBLIN
+16:22:41  335 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:42  336 GameManager::run(): Can't keep up! frame_time 33 ms, split 87 ms
+16:22:42  337 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:42  338 MOVING A GOBLIN
+16:22:42  338 MOVING A GOBLIN
+16:22:42  338 MOVING A GOBLIN
+16:22:42  338 MOVING A GOBLIN
+16:22:42  338 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:42  339 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:42  340 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:42  341 MOVING A GOBLIN
+16:22:42  341 MOVING A GOBLIN
+16:22:42  341 GOBLIN OVERLAPPED MAP!!
+16:22:42  341 MOVING A GOBLIN
+16:22:42  341 MOVING A GOBLIN
+16:22:42  341 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:42  342 GameManager::run(): Can't keep up! frame_time 33 ms, split 76 ms
+16:22:42  343 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:42  344 MOVING A GOBLIN
+16:22:42  344 MOVING A GOBLIN
+16:22:42  344 MOVING A GOBLIN
+16:22:42  344 GOBLIN OVERLAPPED MAP!!
+16:22:42  344 MOVING A GOBLIN
+16:22:42  344 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:42  345 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:42  346 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:42  347 MOVING A GOBLIN
+16:22:42  347 MOVING A GOBLIN
+16:22:42  347 MOVING A GOBLIN
+16:22:42  347 MOVING A GOBLIN
+16:22:42  347 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:42  348 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:42  349 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:42  350 MOVING A GOBLIN
+16:22:42  350 MOVING A GOBLIN
+16:22:42  350 GOBLIN OVERLAPPED MAP!!
+16:22:42  350 MOVING A GOBLIN
+16:22:42  350 MOVING A GOBLIN
+16:22:43  350 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:43  351 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:43  352 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:43  353 MOVING A GOBLIN
+16:22:43  353 MOVING A GOBLIN
+16:22:43  353 MOVING A GOBLIN
+16:22:43  353 MOVING A GOBLIN
+16:22:43  353 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:43  354 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:43  355 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:43  356 MOVING A GOBLIN
+16:22:43  356 MOVING A GOBLIN
+16:22:43  356 MOVING A GOBLIN
+16:22:43  356 MOVING A GOBLIN
+16:22:43  356 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:43  357 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:43  358 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:43  359 MOVING A GOBLIN
+16:22:43  359 MOVING A GOBLIN
+16:22:43  359 GOBLIN OVERLAPPED MAP!!
+16:22:43  359 MOVING A GOBLIN
+16:22:43  359 MOVING A GOBLIN
+16:22:43  359 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:43  360 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:43  361 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+16:22:43  362 MOVING A GOBLIN
+16:22:43  362 MOVING A GOBLIN
+16:22:43  362 MOVING A GOBLIN
+16:22:43  362 MOVING A GOBLIN
+16:22:43  362 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:43  363 GameManager::run(): Can't keep up! frame_time 33 ms, split 88 ms
+16:22:44  364 GameManager::run(): Can't keep up! frame_time 33 ms, split 89 ms
+16:22:44  365 MOVING A GOBLIN
+16:22:44  365 MOVING A GOBLIN
+16:22:44  365 MOVING A GOBLIN
+16:22:44  365 MOVING A GOBLIN
+16:22:44  365 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:44  366 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:44  367 GameManager::run(): Can't keep up! frame_time 33 ms, split 86 ms
+16:22:44  368 MOVING A GOBLIN
+16:22:44  368 MOVING A GOBLIN
+16:22:44  368 GOBLIN OVERLAPPED MAP!!
+16:22:44  368 MOVING A GOBLIN
+16:22:44  368 MOVING A GOBLIN
+16:22:44  368 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:44  369 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:44  370 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:44  371 MOVING A GOBLIN
+16:22:44  371 MOVING A GOBLIN
+16:22:44  371 MOVING A GOBLIN
+16:22:44  371 MOVING A GOBLIN
+16:22:44  371 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:44  372 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:44  373 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:44  374 MOVING A GOBLIN
+16:22:44  374 GOBLIN OVERLAPPED MAP!!
+16:22:44  374 MOVING A GOBLIN
+16:22:44  374 MOVING A GOBLIN
+16:22:44  374 MOVING A GOBLIN
+16:22:44  374 GameManager::run(): Can't keep up! frame_time 33 ms, split 75 ms
+16:22:44  375 GameManager::run(): Can't keep up! frame_time 33 ms, split 73 ms
+16:22:44  376 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+16:22:44  377 MOVING A GOBLIN
+16:22:44  377 MOVING A GOBLIN
+16:22:44  377 GOBLIN OVERLAPPED MAP!!
+16:22:44  377 MOVING A GOBLIN
+16:22:44  377 MOVING A GOBLIN
+16:22:45  377 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:45  378 GameManager::run(): Can't keep up! frame_time 33 ms, split 90 ms
+16:22:45  379 GameManager::run(): Can't keep up! frame_time 33 ms, split 104 ms
+16:22:45  380 MOVING A GOBLIN
+16:22:45  380 MOVING A GOBLIN
+16:22:45  380 MOVING A GOBLIN
+16:22:45  380 MOVING A GOBLIN
+16:22:45  380 GameManager::run(): Can't keep up! frame_time 33 ms, split 78 ms
+16:22:45  381 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:45  382 GameManager::run(): Can't keep up! frame_time 33 ms, split 91 ms
+16:22:45  383 MOVING A GOBLIN
+16:22:45  383 MOVING A GOBLIN
+16:22:45  383 MOVING A GOBLIN
+16:22:45  383 MOVING A GOBLIN
+16:22:45  383 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+16:22:45  384 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+16:22:45  385 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+16:22:45  386 MOVING A GOBLIN
+16:22:45  386 MOVING A GOBLIN
+16:22:45  386 GOBLIN OVERLAPPED MAP!!
+16:22:45  386 MOVING A GOBLIN
+16:22:45  386 MOVING A GOBLIN
+16:22:45  386 GameManager::run(): Can't keep up! frame_time 33 ms, split 79 ms
+16:22:45  387 GameManager::run(): Can't keep up! frame_time 33 ms, split 82 ms
+16:22:45  388 GameManager::run(): Can't keep up! frame_time 33 ms, split 77 ms
+16:22:45  389 MOVING A GOBLIN
+16:22:45  389 MOVING A GOBLIN
+16:22:45  389 MOVING A GOBLIN
+16:22:45  389 MOVING A GOBLIN
+16:22:45  389 GameManager::run(): Can't keep up! frame_time 33 ms, split 80 ms

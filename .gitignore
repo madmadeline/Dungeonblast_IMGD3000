@@ -15,3 +15,7 @@
 *.log
 *.log
 game0/dragonfly.log
+game0/dragonfly.log
+game0/vs-2019/.vs/saucer-shoot/v16/Browse.VC.db
+game0/vs-2019/x64/Debug/vc142.idb
+game0/vs-2019/x64/Debug/vc142.pdb

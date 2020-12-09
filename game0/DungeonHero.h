@@ -17,7 +17,7 @@ private:
 	bool hasFireball;
 
 	void kbd(const df::EventKeyboard* p_keyboard_event);
-	void move(int dir);
+	void move(float dir);
 	void advance(int dir);
 	void fire(df::Vector target);
 	void mouse(const df::EventMouse* p_mouse_event);
