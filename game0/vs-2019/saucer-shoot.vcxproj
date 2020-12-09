@@ -165,7 +165,6 @@
     <ClCompile Include="..\HealthPickup.cpp" />
     <ClCompile Include="..\Map.cpp" />
     <ClCompile Include="..\StringEvent.cpp" />
-    <ClCompile Include="GameUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Bullet.h" />
@@ -179,7 +178,6 @@
     <ClInclude Include="..\HealthPickup.h" />
     <ClInclude Include="..\Map.h" />
     <ClInclude Include="..\StringEvent.h" />
-    <ClInclude Include="GameUtility.h" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
