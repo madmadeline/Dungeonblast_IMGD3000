@@ -42,7 +42,7 @@ void loadResources(void) {
     RM.loadSound("Sounds/GameWin.wav", "Win");
     RM.loadSound("Sounds/HealthPickup.wav", "Health");
     RM.loadSound("Sounds/Iceball.wav", "Fireball");
-    RM.loadSound("Sounds/WeaponPickup.mp3", "Ammo");
+    //RM.loadSound("Sounds/WeaponPickup.mp3", "Ammo");
 }
 
 int main(int argc, char *argv[]) {

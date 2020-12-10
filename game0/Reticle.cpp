@@ -38,5 +38,5 @@ int Reticle::draw() {
     LM.writeLog("DRAWING THE RETICLE");
     //df::Vector viewPos = worldToView(this->getPosition());
     //return DM.drawCh(worldToView(getPosition()), RETICLE_CHAR, df::RED);
-    return DM.drawCh(df::viewToWorld(getPosition()), RETICLE_CHAR, df::RED);
+    return DM.drawCh(getPosition(), RETICLE_CHAR, df::RED);
 }

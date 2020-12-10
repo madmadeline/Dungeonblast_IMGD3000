@@ -37,7 +37,7 @@ window_style:default,
 window_title:Dragonfly,
 
 # Show mouse cursor.
-show_mouse:false,
+show_mouse:true,
 
 # Run in headless mode (no graphics window or input).
 headless:false,

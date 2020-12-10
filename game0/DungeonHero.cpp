@@ -330,15 +330,15 @@ void DungeonHero::collide(const df::EventCollision* p_c) {
 	else if (((p_c->getObject1()->getType()) == "bulletPickup") ||
 		((p_c->getObject2()->getType()) == "bulletPickup")) {
 		ammo += 10;
-		df::Sound* p_sound = RM.getSound("Ammo");
-		p_sound->play();
+		//df::Sound* p_sound = RM.getSound("Ammo");
+		//p_sound->play();
 		df::EventView ev("Ammo:", 10, true);
 		WM.onEvent(&ev);
 	}
 	else if (((p_c->getObject1()->getType()) == "fireballPickup") ||
 		((p_c->getObject2()->getType()) == "fireballPickup")) {
-		df::Sound* p_sound = RM.getSound("Fireball");
-		p_sound->play();
+		//df::Sound* p_sound = RM.getSound("Fireball");
+		//p_sound->play();
 		hasFireball = true;
 		df::EventView ev("Magic:", 1, true);
 		WM.onEvent(&ev);
