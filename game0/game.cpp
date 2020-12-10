@@ -22,7 +22,7 @@
 
 void loadResources(void) {
     //RM.loadSprite("Sprites/map2.txt", "MapTest");
-    RM.loadSprite("Sprites/map-test.txt", "MapTest");
+    RM.loadSprite("Sprites/map-final.txt", "MapTest");
     //RM.loadSprite("Sprites/hero-spr.txt", "Hero");
     RM.loadSprite("Sprites/hero-idle-fire.txt", "HeroIdleFire");
     RM.loadSprite("Sprites/hero-idle-gun.txt", "HeroIdleGun");
@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
   }
   
   // setting world to be size of map sprite
-  WM.setBoundary(df::Box(df::Vector(0, 0), 60, 30));
+  WM.setBoundary(df::Box(df::Vector(0, 0), 256, 96));
   loadResources();
 
   new GameStart();

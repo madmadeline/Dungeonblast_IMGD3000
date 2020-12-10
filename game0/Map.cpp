@@ -1,6 +1,7 @@
 #include "Map.h"
 #include "WorldManager.h"
 #include "Utility.h"
+#include <PlayerEvent.h>
 
 Map::Map() {
 
@@ -8,7 +9,9 @@ Map::Map() {
 	setType("Map");
 
 	setSolidness(df::SPECTRAL);
-	setPosition(df::Vector(30,15)); // change
+	setPosition(df::Vector(128,48)); // change
+
+	registerInterest(PLAYER_EVENT);
 }
 
 Map& Map::getInstance() {
@@ -17,6 +20,23 @@ Map& Map::getInstance() {
 }
 
 Map::~Map() {
+}
+
+int Map::eventHandler(const df::Event* p_e) {
+	if (p_e->getType() == PLAYER_EVENT) {
+		const PlayerEvent* p_player_event =
+			dynamic_cast <const PlayerEvent*> (p_e);
+		player_pos = p_player_event->getPos();
+		return 1;
+	}
+}
+
+int Map::draw() {
+	int x_abs_max = getAnimation().getSprite()->getWidth();
+	int y_abs_max = getAnimation().getSprite()->getHeight();
+
+	df::Box window = WM.getBoundary();
+
 }
 
 /*
