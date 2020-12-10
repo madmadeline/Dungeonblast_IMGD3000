@@ -107,5 +107,13 @@
     <ClInclude Include="..\GameOver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PlayerEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlayerEvent.cpp">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

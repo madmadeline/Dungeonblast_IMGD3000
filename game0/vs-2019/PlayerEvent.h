@@ -7,10 +7,11 @@ const std::string PLAYER_EVENT = "playerevent";
 class PlayerEvent : public df::Event {
 
 private:
-	df::Vector player_pos;
+	
 
 public:
 	PlayerEvent(df::Vector pos);
+	df::Vector player_pos;
 	void setPos(df::Vector pos);
 	df::Vector getPos() const;
 };

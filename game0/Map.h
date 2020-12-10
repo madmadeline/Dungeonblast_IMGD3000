@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Object.h"
+#include "PlayerEvent.h"
 
 #define GAME_MAP Map::getInstance()
 
@@ -21,6 +22,8 @@ public:
 	int eventHandler(const df::Event* p_e);
 
 	int draw();
+
+	void setPPos(const PlayerEvent* p_e);
 
 	//Map(df::Vector pos);
 
