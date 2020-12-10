@@ -87,7 +87,7 @@ void GameStart::start() {
 	// TODO: SPAWN ENEMIES
 	// INCLUDING BOSSES
 
-	new Boss(220, 48);
+	//new Boss(220, 48);
 
 
 	// some pickups

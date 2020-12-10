@@ -13,6 +13,8 @@ Map::Map() {
 	setSolidness(df::SPECTRAL);
 	setPosition(df::Vector(128,48)); // change
 
+	setAltitude(0);
+
 	registerInterest(PLAYER_EVENT);
 }
 
@@ -39,7 +41,7 @@ int Map::draw() {
 	int x_abs_max = getAnimation().getSprite()->getWidth();
 	int y_abs_max = getAnimation().getSprite()->getHeight();
 
-	float wind_w = (float)x_abs_max * 1.0/4;
+	float wind_w = (float)x_abs_max * 1.0/3;
 	float wind_h = (float)y_abs_max * 1.0/4;
 
 	int x_min = (int)player_pos.getX() - (int)wind_w;
@@ -63,8 +65,8 @@ int Map::draw() {
 	for (int i = x_min; i < x_max; i++) {
 		for (int j = y_min; j < y_max; j++) {
 			char c = map_str[i + (j * map_w)];
-			df::Vector v = df::viewToWorld(df::Vector(i,j));
-			if (DM.drawCh(v, c, color) == -1)
+			//df::Vector v = df::worldToView(df::Vector(i,j));
+			if (DM.drawCh(df::Vector(i, j+1), c, color) == -1)
 				LM.writeLog("MAP::DRAW() FAILED TO DRAW CHARACTER AT %d, %d", i, j);
 		}
 	}
