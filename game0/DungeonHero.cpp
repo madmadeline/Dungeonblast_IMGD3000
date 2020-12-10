@@ -19,7 +19,8 @@
 //CONSTRUCTOR
 DungeonHero::DungeonHero() {
 	setType("Hero");
-	setSprite("Hero");
+	setSprite("HeroIdleGun");
+	this->getAnimation().getSprite()->setTransparency(' ');
 
 	//register interests
 	registerInterest(df::KEYBOARD_EVENT);
@@ -52,9 +53,13 @@ DungeonHero::DungeonHero() {
 	p_reticle = new Reticle();
 	p_reticle->draw();
 
+<<<<<<< HEAD
 	//play the background music
 	df::Music* p_music = RM.getMusic("BGM");
 	p_music->play();
+=======
+	moveSpriteTimer = 2;
+>>>>>>> a9fb3b0a0c1c3d0d4d8699f0b672844c66f6e0e4
 }
 
 //DESTRUCTOR
@@ -141,8 +146,8 @@ void DungeonHero::kbd(const df::EventKeyboard* p_keyboard_event){
 			}
 			else {
 				equipped = 0;
-				GunEvent gune;
-				WM.onEvent(&gune);
+				GunEvent gun;
+				WM.onEvent(&gun);
 			}
 		break;
 	default: //other key pressed
@@ -158,6 +163,15 @@ void DungeonHero::move(float dir){
 	if (move_countdown > 0)
 		return;
 	move_countdown = move_slowdown;
+
+	if (moveSpriteTimer >= 6) {
+		if (equipped == 0)
+			setSprite("HeroWalkingGun");
+		else
+			setSprite("HeroWalkingFire");
+		this->getAnimation().getSprite()->setTransparency(' ');
+		moveSpriteTimer = 0;
+	}
 
 	df::Vector new_pos(getPosition().getX(), getPosition().getY() + dir);
 
@@ -182,6 +196,7 @@ void DungeonHero::move(float dir){
 		WM.moveObject(this, new_pos);
 	
 	WM.moveObject(this, new_pos);
+	moveSpriteTimer = 0;
 }
 
 //MOVE THE HERO LEFT OR RIGHT
@@ -191,6 +206,15 @@ void DungeonHero::advance(int dir) {
 		return;
 	move_countdown = move_slowdown;
 
+	if (moveSpriteTimer >= 6) {
+		if (equipped == 0)
+			setSprite("HeroWalkingGun");
+		else
+			setSprite("HeroWalkingFire");
+		this->getAnimation().getSprite()->setTransparency(' ');
+		moveSpriteTimer = 0;
+	}
+
 	df::Vector new_pos(getPosition().getX() + dir, getPosition().getY());
 
 	int checkDir = 0;
@@ -199,6 +223,9 @@ void DungeonHero::advance(int dir) {
 	else
 		checkDir = -2;
 
+	/// 
+	/// NEED TO CHANGE THIS ACCORDING TO FINAL MAP
+	/// 
 	if (new_pos.getX() >= 94 && new_pos.getX() <= 98 && new_pos.getY() >= 23 && new_pos.getY() <= 40 && bossDrawn == false) {
 		//draw the boss and start the boss music
 		//new Boss(73, 25);
@@ -254,7 +281,7 @@ void DungeonHero::mouse(const df::EventMouse* p_mouse_event) {
 	//pressed button?
 	if ((p_mouse_event->getMouseAction() == df::CLICKED) &&
 		(p_mouse_event->getMouseButton() == df::Mouse::LEFT))
-		fire(p_mouse_event->getMousePosition());
+		fire(df::viewToWorld(p_mouse_event->getMousePosition()));
 }
 
 //STEP EVENT STUFF
@@ -267,6 +294,16 @@ void DungeonHero::step(){
 	if (fire_countdown < 0) {
 		fire_countdown = 0;
 	}
+
+	if (moveSpriteTimer >= 6) {
+		if (equipped == 0)
+			setSprite("HeroIdleGun");
+		else
+			setSprite("HeroIdleFire");
+		this->getAnimation().getSprite()->setTransparency(' ');
+	}
+	else
+		moveSpriteTimer++;
 }
 
 //COLLISION EVENT STUFF

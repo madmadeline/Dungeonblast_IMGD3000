@@ -16,6 +16,7 @@ private:
 	int currentDir;
 	int equipped;
 	bool hasFireball;
+	int moveSpriteTimer;
 
 	void kbd(const df::EventKeyboard* p_keyboard_event);
 	void move(float dir);
