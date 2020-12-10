@@ -12,6 +12,7 @@
 #include "FireballPickup.h"
 #include "ViewObject.h"
 #include "HealthPickup.h"
+#include "Music.h"
 
 #include "WorldManager.h"
 #include "Equipped.h"
@@ -19,9 +20,20 @@
 
 
 void loadResources(void) {
-    RM.loadSprite("Sprites/map2.txt", "MapTest");
+    //RM.loadSprite("Sprites/map2.txt", "MapTest");
+    RM.loadSprite("Sprites/map-test.txt", "MapTest");
     RM.loadSprite("Sprites/hero-spr.txt", "Hero");
     RM.loadSprite("Sprites/goblin-spr.txt", "Goblin");
+    RM.loadSprite("Sprites/dragon-spr.txt", "Dragon");
+    RM.loadMusic("Sounds/BackgroundMusic.wav", "BGM");
+    RM.loadSound("Sounds/DragonRoar.wav", "Roar");
+    RM.loadSound("Sounds/EnemyDeath.wav", "Death");
+    RM.loadSound("Sounds/Fireball.wav", "Shoot");
+    RM.loadSound("Sounds/GameOver.wav", "Gameover");
+    RM.loadSound("Sounds/GameWin.wav", "Win");
+    RM.loadSound("Sounds/HealthPickup.wav", "Health");
+    RM.loadSound("Sounds/Iceball.wav", "Fireball");
+    RM.loadSound("Sounds/WeaponPickup.mp3", "Ammo");
 }
 
 int main(int argc, char *argv[]) {
@@ -34,7 +46,7 @@ int main(int argc, char *argv[]) {
   }
   
   // setting world to be size of map sprite
-  WM.setBoundary(df::Box(df::Vector(0, 0), 98, 50));
+  WM.setBoundary(df::Box(df::Vector(0, 0), 60, 30));
   loadResources();
 
   // test map obj collisions
@@ -55,13 +67,16 @@ int main(int argc, char *argv[]) {
 
   // player
   DungeonHero* hero = new DungeonHero;
-  WM.setViewFollowing(hero);
+  //WM.setViewFollowing(hero);
 
   // some enemies
-  new Goblin(9, 32, 1);
+  /*new Goblin(9, 32, 1);
   new Goblin(21, 27, -1);
   new Goblin(34, 47, -2);
-  new Goblin(37, 39, 2);
+  new Goblin(37, 39, 2);*/
+  //new Goblin(12, 5, -1);
+  //new Goblin(12, 18, 2);
+  new Boss(12, 5);
 
   //boss
   //new Boss(35,77); //put in the boss room, coords will change with new map config
@@ -91,4 +106,3 @@ int main(int argc, char *argv[]) {
   // Shut everything down.
   GM.shutDown();
 }
-

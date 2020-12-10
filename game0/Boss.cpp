@@ -11,7 +11,7 @@
 
 Boss::Boss(int x, int y) {
 	setType("Boss");
-	setSprite("Goblin");
+	setSprite("Dragon");
 
 	setPosition(df::Vector(x, y));
 
@@ -20,7 +20,7 @@ Boss::Boss(int x, int y) {
 	move_slowdown = 2;
 	move_countdown = move_slowdown;
 	hp = 12;
-	dir = 1; //controls the initial direction of the goblin. 
+	dir = 1; //controls the initial direction of the boss. 
 			   //1 = up
 			   //-1 = down
 			   //2 = left
@@ -45,7 +45,11 @@ int Boss::eventHandler(const df::Event* p_e) {
 }
 
 Boss::~Boss() {
-
+	df::Sound* p_sound = RM.getSound("Win");
+	p_sound->play();
+	df::Sound* p_sound2 = RM.getSound("Roar");
+	p_sound2->play();
+	WM.markForDelete(this);
 }
 
 //STEP EVENT STUFF
@@ -75,7 +79,7 @@ void Boss::hit(const df::EventCollision* p_c) {
 		//decrease enemy hp and check to see if zero
 		hp -= 6;
 		if (hp <= 0) {
-			WM.markForDelete(this);
+			Boss::~Boss();
 		}
 	}
 	//if fireball on enemy
@@ -84,7 +88,7 @@ void Boss::hit(const df::EventCollision* p_c) {
 		//decrease enemy hp and check to see if zero
 		hp -= 4;
 		if (hp >= 0) {
-			WM.markForDelete(this);
+			Boss::~Boss();
 		}
 	}
 	//if hero on enemy

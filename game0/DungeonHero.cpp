@@ -29,7 +29,7 @@ DungeonHero::DungeonHero() {
 
 	//set init position
 	//df::Vector p(42, WM.getBoundary().getVertical() / 2);
-	df::Vector p(6, 43);
+	df::Vector p(6, 27);
 	setPosition(p);
 
 	//set init variables
@@ -51,10 +51,16 @@ DungeonHero::DungeonHero() {
 	//mouse pointer
 	p_reticle = new Reticle();
 	p_reticle->draw();
+
+	//play the background music
+	df::Music* p_music = RM.getMusic("BGM");
+	p_music->play();
 }
 
 //DESTRUCTOR
 DungeonHero::~DungeonHero(){
+	df::Sound* p_sound = RM.getSound("Gameover");
+	p_sound->play();
 	GM.setGameOver(true);
 }
 
@@ -167,8 +173,8 @@ void DungeonHero::move(float dir){
 
 	if (new_pos.getX() >= 94 && new_pos.getX() <= 98 && new_pos.getY() >= 23 && new_pos.getY() <= 40 && bossDrawn == false) {
 		//draw the boss and start the boss music
-		new Boss(35, 77);
-		bossDrawn = true;
+		//new Boss(35, 77);
+		//bossDrawn = true;
 	}
 
 	if ((new_pos.getY() > -1) &&
@@ -195,8 +201,8 @@ void DungeonHero::advance(int dir) {
 
 	if (new_pos.getX() >= 94 && new_pos.getX() <= 98 && new_pos.getY() >= 23 && new_pos.getY() <= 40 && bossDrawn == false) {
 		//draw the boss and start the boss music
-		new Boss(73, 25);
-		bossDrawn = true;
+		//new Boss(73, 25);
+		//bossDrawn = true;
 	}
 
 	if (checkOverlapMap(this, new_pos, checkDir) == true) {
@@ -226,12 +232,17 @@ void DungeonHero::fire(df::Vector target){
 		}
 		Bullet* p = new Bullet(getPosition());
 		p->setVelocity(v);
+		// Play "bullet" sound.
+		df::Sound* p_sound = RM.getSound("Shoot");
+		p_sound->play();
 		ammo--;
 		df::EventView ev("Ammo:", -1, true);
 		WM.onEvent(&ev);
 	}
 	else if (equipped == 1) {
 		//magic equipped
+		df::Sound* p_sound = RM.getSound("Fireball");
+		p_sound->play();
 		Fireball* p = new Fireball(getPosition());
 		p->setVelocity(v);
 	}
@@ -265,6 +276,8 @@ void DungeonHero::collide(const df::EventCollision* p_c){
 		((p_c->getObject2()->getType()) == "Goblin")) {
 		hp -= 20;
 		df::EventView ev("Health:", -20, true);
+		df::Sound* p_sound = RM.getSound("Death");
+		p_sound->play();
 		WM.onEvent(&ev);
 		if (hp <= 0) {
 			//game over
@@ -274,11 +287,15 @@ void DungeonHero::collide(const df::EventCollision* p_c){
 	else if (((p_c->getObject1()->getType()) == "bulletPickup") ||
 		((p_c->getObject2()->getType()) == "bulletPickup")) {
 		ammo += 10;
+		df::Sound* p_sound = RM.getSound("Ammo");
+		p_sound->play();
 		df::EventView ev("Ammo:", 10, true);
 		WM.onEvent(&ev);
 	}
 	else if (((p_c->getObject1()->getType()) == "fireballPickup") ||
 		((p_c->getObject2()->getType()) == "fireballPickup")) {
+		df::Sound* p_sound = RM.getSound("Fireball");
+		p_sound->play();
 		hasFireball = true;
 		df::EventView ev("Magic:", 1, true);
 		WM.onEvent(&ev);
@@ -286,6 +303,8 @@ void DungeonHero::collide(const df::EventCollision* p_c){
 	else if (((p_c->getObject1()->getType()) == "healthPickup") ||
 		((p_c->getObject2()->getType()) == "healthPickup")) {
 		hp += 20;
+		df::Sound* p_sound = RM.getSound("Health");
+		p_sound->play();
 		df::EventView ev("Health:", 20, true);
 		WM.onEvent(&ev);
 	}

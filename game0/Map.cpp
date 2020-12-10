@@ -8,7 +8,7 @@ Map::Map() {
 	setType("Map");
 
 	setSolidness(df::SPECTRAL);
-	setPosition(df::Vector(49,25));
+	setPosition(df::Vector(30,15)); // change
 }
 
 Map& Map::getInstance() {

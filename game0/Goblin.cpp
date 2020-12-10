@@ -12,6 +12,7 @@
 Goblin::Goblin(int x, int y, int d) {
 	setType("Goblin");
 	setSprite("Goblin");
+	this->getAnimation().getSprite()->setTransparency(' ');
 
 	setPosition(df::Vector(x, y));
 

@@ -1,185 +1,450 @@
-21:00:16    0 ****************************************************
-21:00:16    0 ** Dragonfly version 4.15 **
-21:00:16    0 ** Game engine started **
-21:00:16    0 ****************************************************
-21:00:18    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/map2.txt'.
-21:00:18    0 ResourceManager::loadSprite(): Sprite 'MapTest' loaded.
-21:00:18    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/hero-spr.txt'.
-21:00:18    0 ResourceManager::loadSprite(): Sprite 'Hero' loaded.
-21:00:18    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/goblin-spr.txt'.
-21:00:18    0 ResourceManager::loadSprite(): Sprite 'Goblin' loaded.
-21:00:18    0 WorldManager::isValid(): Event df-collision handled automatically.
-21:00:18    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-21:00:18    0 DRAWING THE RETICLE
-21:00:18    0 WorldManager::isValid(): Event df-collision handled automatically.
-21:00:18    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-21:00:18    0 WorldManager::isValid(): Event df-collision handled automatically.
-21:00:18    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-21:00:18    0 WorldManager::isValid(): Event df-collision handled automatically.
-21:00:18    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-21:00:18    0 WorldManager::isValid(): Event df-collision handled automatically.
-21:00:18    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
-21:00:18    1 GameManager::run(): Can't keep up! frame_time 33 ms, split 127 ms
-21:00:18    2 MOVING A GOBLIN
-21:00:18    2 GOBLIN OVERLAPPED MAP!!
-21:00:18    2 MOVING A GOBLIN
-21:00:18    2 GOBLIN OVERLAPPED MAP!!
-21:00:18    2 MOVING A GOBLIN
-21:00:18    2 MOVING A GOBLIN
-21:00:18    2 GOBLIN OVERLAPPED MAP!!
-21:00:18    2 GameManager::run(): Can't keep up! frame_time 33 ms, split 159 ms
-21:00:18    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 122 ms
-21:00:18    4 GameManager::run(): Can't keep up! frame_time 33 ms, split 120 ms
-21:00:18    5 MOVING A GOBLIN
-21:00:18    5 GOBLIN OVERLAPPED MAP!!
-21:00:18    5 MOVING A GOBLIN
-21:00:18    5 GOBLIN OVERLAPPED MAP!!
-21:00:18    5 MOVING A GOBLIN
-21:00:18    5 MOVING A GOBLIN
-21:00:18    5 GameManager::run(): Can't keep up! frame_time 33 ms, split 122 ms
-21:00:18    6 GameManager::run(): Can't keep up! frame_time 33 ms, split 138 ms
-21:00:19    7 GameManager::run(): Can't keep up! frame_time 33 ms, split 133 ms
-21:00:19    8 MOVING A GOBLIN
-21:00:19    8 GOBLIN OVERLAPPED MAP!!
-21:00:19    8 MOVING A GOBLIN
-21:00:19    8 GOBLIN OVERLAPPED MAP!!
-21:00:19    8 MOVING A GOBLIN
-21:00:19    8 MOVING A GOBLIN
-21:00:19    8 GameManager::run(): Can't keep up! frame_time 33 ms, split 119 ms
-21:00:19    9 GameManager::run(): Can't keep up! frame_time 33 ms, split 173 ms
-21:00:19   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 112 ms
-21:00:19   11 MOVING A GOBLIN
-21:00:19   11 GOBLIN OVERLAPPED MAP!!
-21:00:19   11 MOVING A GOBLIN
-21:00:19   11 GOBLIN OVERLAPPED MAP!!
-21:00:19   11 MOVING A GOBLIN
-21:00:19   11 MOVING A GOBLIN
-21:00:19   11 GameManager::run(): Can't keep up! frame_time 33 ms, split 135 ms
-21:00:19   12 GameManager::run(): Can't keep up! frame_time 33 ms, split 116 ms
-21:00:19   13 GameManager::run(): Can't keep up! frame_time 33 ms, split 140 ms
-21:00:19   14 MOVING A GOBLIN
-21:00:19   14 GOBLIN OVERLAPPED MAP!!
-21:00:19   14 MOVING A GOBLIN
-21:00:19   14 GOBLIN OVERLAPPED MAP!!
-21:00:19   14 MOVING A GOBLIN
-21:00:19   14 MOVING A GOBLIN
-21:00:20   14 GameManager::run(): Can't keep up! frame_time 33 ms, split 117 ms
-21:00:20   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:20   16 GameManager::run(): Can't keep up! frame_time 33 ms, split 126 ms
-21:00:20   17 MOVING A GOBLIN
-21:00:20   17 GOBLIN OVERLAPPED MAP!!
-21:00:20   17 MOVING A GOBLIN
-21:00:20   17 GOBLIN OVERLAPPED MAP!!
-21:00:20   17 MOVING A GOBLIN
-21:00:20   17 MOVING A GOBLIN
-21:00:20   17 GameManager::run(): Can't keep up! frame_time 33 ms, split 147 ms
-21:00:20   18 GameManager::run(): Can't keep up! frame_time 33 ms, split 118 ms
-21:00:20   19 GameManager::run(): Can't keep up! frame_time 33 ms, split 155 ms
-21:00:20   20 MOVING A GOBLIN
-21:00:20   20 GOBLIN OVERLAPPED MAP!!
-21:00:20   20 MOVING A GOBLIN
-21:00:20   20 GOBLIN OVERLAPPED MAP!!
-21:00:20   20 MOVING A GOBLIN
-21:00:20   20 MOVING A GOBLIN
-21:00:20   20 GameManager::run(): Can't keep up! frame_time 33 ms, split 112 ms
-21:00:20   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 133 ms
-21:00:21   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 114 ms
-21:00:21   23 MOVING A GOBLIN
-21:00:21   23 GOBLIN OVERLAPPED MAP!!
-21:00:21   23 MOVING A GOBLIN
-21:00:21   23 GOBLIN OVERLAPPED MAP!!
-21:00:21   23 MOVING A GOBLIN
-21:00:21   23 MOVING A GOBLIN
-21:00:21   23 GameManager::run(): Can't keep up! frame_time 33 ms, split 113 ms
-21:00:21   24 GameManager::run(): Can't keep up! frame_time 33 ms, split 127 ms
-21:00:21   25 GameManager::run(): Can't keep up! frame_time 33 ms, split 151 ms
-21:00:21   26 MOVING A GOBLIN
-21:00:21   26 GOBLIN OVERLAPPED MAP!!
-21:00:21   26 MOVING A GOBLIN
-21:00:21   26 GOBLIN OVERLAPPED MAP!!
-21:00:21   26 MOVING A GOBLIN
-21:00:21   26 MOVING A GOBLIN
-21:00:21   26 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
-21:00:21   27 GameManager::run(): Can't keep up! frame_time 33 ms, split 107 ms
-21:00:21   28 GameManager::run(): Can't keep up! frame_time 33 ms, split 110 ms
-21:00:21   29 MOVING A GOBLIN
-21:00:21   29 GOBLIN OVERLAPPED MAP!!
-21:00:21   29 MOVING A GOBLIN
-21:00:21   29 GOBLIN OVERLAPPED MAP!!
-21:00:21   29 MOVING A GOBLIN
-21:00:21   29 MOVING A GOBLIN
-21:00:21   29 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:21   30 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:22   31 GameManager::run(): Can't keep up! frame_time 33 ms, split 107 ms
-21:00:22   32 MOVING A GOBLIN
-21:00:22   32 GOBLIN OVERLAPPED MAP!!
-21:00:22   32 MOVING A GOBLIN
-21:00:22   32 GOBLIN OVERLAPPED MAP!!
-21:00:22   32 MOVING A GOBLIN
-21:00:22   32 MOVING A GOBLIN
-21:00:22   32 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:22   33 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:22   34 GameManager::run(): Can't keep up! frame_time 33 ms, split 155 ms
-21:00:22   35 MOVING A GOBLIN
-21:00:22   35 GOBLIN OVERLAPPED MAP!!
-21:00:22   35 MOVING A GOBLIN
-21:00:22   35 GOBLIN OVERLAPPED MAP!!
-21:00:22   35 MOVING A GOBLIN
-21:00:22   35 MOVING A GOBLIN
-21:00:22   35 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
-21:00:22   36 GameManager::run(): Can't keep up! frame_time 33 ms, split 108 ms
-21:00:22   37 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:22   38 MOVING A GOBLIN
-21:00:22   38 GOBLIN OVERLAPPED MAP!!
-21:00:22   38 MOVING A GOBLIN
-21:00:22   38 GOBLIN OVERLAPPED MAP!!
-21:00:22   38 MOVING A GOBLIN
-21:00:22   38 GOBLIN OVERLAPPED MAP!!
-21:00:22   38 MOVING A GOBLIN
-21:00:22   38 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:22   39 GameManager::run(): Can't keep up! frame_time 33 ms, split 112 ms
-21:00:23   40 GameManager::run(): Can't keep up! frame_time 33 ms, split 114 ms
-21:00:23   41 MOVING A GOBLIN
-21:00:23   41 GOBLIN OVERLAPPED MAP!!
-21:00:23   41 MOVING A GOBLIN
-21:00:23   41 GOBLIN OVERLAPPED MAP!!
-21:00:23   41 MOVING A GOBLIN
-21:00:23   41 MOVING A GOBLIN
-21:00:23   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 122 ms
-21:00:23   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:23   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 110 ms
-21:00:23   44 MOVING A GOBLIN
-21:00:23   44 GOBLIN OVERLAPPED MAP!!
-21:00:23   44 MOVING A GOBLIN
-21:00:23   44 GOBLIN OVERLAPPED MAP!!
-21:00:23   44 MOVING A GOBLIN
-21:00:23   44 MOVING A GOBLIN
-21:00:23   44 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
-21:00:23   45 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:23   46 GameManager::run(): Can't keep up! frame_time 33 ms, split 111 ms
-21:00:23   47 MOVING A GOBLIN
-21:00:23   47 GOBLIN OVERLAPPED MAP!!
-21:00:23   47 MOVING A GOBLIN
-21:00:23   47 GOBLIN OVERLAPPED MAP!!
-21:00:23   47 MOVING A GOBLIN
-21:00:23   47 MOVING A GOBLIN
-21:00:23   47 GameManager::run(): Can't keep up! frame_time 33 ms, split 110 ms
-21:00:23   48 GameManager::run(): Can't keep up! frame_time 33 ms, split 110 ms
-21:00:24   49 GameManager::run(): Can't keep up! frame_time 33 ms, split 151 ms
-21:00:24   50 MOVING A GOBLIN
-21:00:24   50 GOBLIN OVERLAPPED MAP!!
-21:00:24   50 MOVING A GOBLIN
-21:00:24   50 GOBLIN OVERLAPPED MAP!!
-21:00:24   50 MOVING A GOBLIN
-21:00:24   50 MOVING A GOBLIN
-21:00:24   50 GameManager::run(): Can't keep up! frame_time 33 ms, split 135 ms
-21:00:24   51 GameManager::run(): Can't keep up! frame_time 33 ms, split 139 ms
-21:00:24   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 140 ms
-21:00:24   53 MOVING A GOBLIN
-21:00:24   53 GOBLIN OVERLAPPED MAP!!
-21:00:24   53 MOVING A GOBLIN
-21:00:24   53 GOBLIN OVERLAPPED MAP!!
-21:00:24   53 MOVING A GOBLIN
-21:00:24   53 MOVING A GOBLIN
-21:00:24   53 GameManager::run(): Can't keep up! frame_time 33 ms, split 109 ms
-21:00:24   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 316 ms
+22:33:38    0 ****************************************************
+22:33:38    0 ** Dragonfly version 4.15 **
+22:33:38    0 ** Game engine started **
+22:33:38    0 ****************************************************
+22:33:39    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/map-test.txt'.
+22:33:39    0 ResourceManager::loadSprite(): Sprite 'MapTest' loaded.
+22:33:39    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/hero-spr.txt'.
+22:33:39    0 ResourceManager::loadSprite(): Sprite 'Hero' loaded.
+22:33:39    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/goblin-spr.txt'.
+22:33:39    0 ResourceManager::loadSprite(): Sprite 'Goblin' loaded.
+22:33:39    0 ResourceManager::loadSprite(): Loading sprite 'Sprites/dragon-spr.txt'.
+22:33:39    0 ResourceManager::loadSprite(): Sprite 'Dragon' loaded.
+22:33:39    0 ResourceManager::loadSound(): Error! Cannot load sound from file 'Sounds/DragonRoar.wav'.
+22:33:39    0 ResourceManager::loadSound(): Error! Cannot load sound from file 'Sounds/WeaponPickup.mp3'.
+22:33:39    0 WorldManager::isValid(): Event df-collision handled automatically.
+22:33:39    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+22:33:39    0 DRAWING THE RETICLE
+22:33:39    0 WorldManager::isValid(): Event df-collision handled automatically.
+22:33:39    0 Manager(WorldManager)::registerInterest(): Event 'df-collision' not valid for this Manager
+22:33:39    0 DRAWING THE RETICLE
+22:33:39    1 DRAWING THE RETICLE
+22:33:39    1 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:39    2 DRAWING THE RETICLE
+22:33:39    2 GameManager::run(): Can't keep up! frame_time 33 ms, split 54 ms
+22:33:39    3 DRAWING THE RETICLE
+22:33:39    3 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
+22:33:39    4 DRAWING THE RETICLE
+22:33:39    4 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:39    5 DRAWING THE RETICLE
+22:33:40    5 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:40    6 DRAWING THE RETICLE
+22:33:40    6 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:40    7 DRAWING THE RETICLE
+22:33:40    7 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:40    8 DRAWING THE RETICLE
+22:33:40    8 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:40    9 DRAWING THE RETICLE
+22:33:40    9 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:40   10 DRAWING THE RETICLE
+22:33:40   10 GameManager::run(): Can't keep up! frame_time 33 ms, split 64 ms
+22:33:40   11 DRAWING THE RETICLE
+22:33:40   11 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+22:33:40   12 DRAWING THE RETICLE
+22:33:40   12 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+22:33:40   13 DRAWING THE RETICLE
+22:33:40   13 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:40   14 DRAWING THE RETICLE
+22:33:40   14 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+22:33:40   15 DRAWING THE RETICLE
+22:33:40   15 GameManager::run(): Can't keep up! frame_time 33 ms, split 55 ms
+22:33:40   16 DRAWING THE RETICLE
+22:33:40   16 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:40   17 DRAWING THE RETICLE
+22:33:40   17 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
+22:33:40   18 DRAWING THE RETICLE
+22:33:40   18 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+22:33:40   19 DRAWING THE RETICLE
+22:33:40   19 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:40   20 DRAWING THE RETICLE
+22:33:40   20 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+22:33:40   21 DRAWING THE RETICLE
+22:33:40   21 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+22:33:40   22 DRAWING THE RETICLE
+22:33:40   22 GameManager::run(): Can't keep up! frame_time 33 ms, split 78 ms
+22:33:41   23 DRAWING THE RETICLE
+22:33:41   23 GameManager::run(): Can't keep up! frame_time 33 ms, split 82 ms
+22:33:41   24 DRAWING THE RETICLE
+22:33:41   24 GameManager::run(): Can't keep up! frame_time 33 ms, split 79 ms
+22:33:41   25 DRAWING THE RETICLE
+22:33:41   25 GameManager::run(): Can't keep up! frame_time 33 ms, split 69 ms
+22:33:41   26 DRAWING THE RETICLE
+22:33:41   26 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+22:33:41   27 DRAWING THE RETICLE
+22:33:41   27 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+22:33:41   28 DRAWING THE RETICLE
+22:33:41   28 GameManager::run(): Can't keep up! frame_time 33 ms, split 72 ms
+22:33:41   29 DRAWING THE RETICLE
+22:33:41   29 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:41   30 DRAWING THE RETICLE
+22:33:41   30 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:41   31 DRAWING THE RETICLE
+22:33:41   31 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
+22:33:41   32 DRAWING THE RETICLE
+22:33:41   32 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+22:33:41   33 DRAWING THE RETICLE
+22:33:41   33 GameManager::run(): Can't keep up! frame_time 33 ms, split 100 ms
+22:33:41   34 DRAWING THE RETICLE
+22:33:41   34 GameManager::run(): Can't keep up! frame_time 33 ms, split 101 ms
+22:33:41   35 DRAWING THE RETICLE
+22:33:41   35 GameManager::run(): Can't keep up! frame_time 33 ms, split 51 ms
+22:33:41   36 DRAWING THE RETICLE
+22:33:41   36 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+22:33:41   37 DRAWING THE RETICLE
+22:33:41   37 GameManager::run(): Can't keep up! frame_time 33 ms, split 51 ms
+22:33:42   38 DRAWING THE RETICLE
+22:33:42   38 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+22:33:42   39 DRAWING THE RETICLE
+22:33:42   39 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
+22:33:42   40 DRAWING THE RETICLE
+22:33:42   40 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+22:33:42   41 DRAWING THE RETICLE
+22:33:42   41 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+22:33:42   42 DRAWING THE RETICLE
+22:33:42   42 GameManager::run(): Can't keep up! frame_time 33 ms, split 51 ms
+22:33:42   43 DRAWING THE RETICLE
+22:33:42   43 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+22:33:42   44 DRAWING THE RETICLE
+22:33:42   44 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+22:33:42   45 DRAWING THE RETICLE
+22:33:42   45 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:42   46 DRAWING THE RETICLE
+22:33:42   46 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:42   47 DRAWING THE RETICLE
+22:33:42   47 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:42   48 DRAWING THE RETICLE
+22:33:42   48 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:42   49 DRAWING THE RETICLE
+22:33:42   49 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:42   50 DRAWING THE RETICLE
+22:33:42   50 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
+22:33:42   51 DRAWING THE RETICLE
+22:33:42   51 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:42   52 DRAWING THE RETICLE
+22:33:42   52 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:42   53 DRAWING THE RETICLE
+22:33:42   53 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:42   54 DRAWING THE RETICLE
+22:33:42   54 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:42   55 DRAWING THE RETICLE
+22:33:42   55 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:42   56 DRAWING THE RETICLE
+22:33:42   56 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:42   57 DRAWING THE RETICLE
+22:33:42   57 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:42   58 DRAWING THE RETICLE
+22:33:42   58 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+22:33:43   59 DRAWING THE RETICLE
+22:33:43   59 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:43   60 DRAWING THE RETICLE
+22:33:43   60 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:43   61 DRAWING THE RETICLE
+22:33:43   61 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+22:33:43   62 DRAWING THE RETICLE
+22:33:43   62 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+22:33:43   63 DRAWING THE RETICLE
+22:33:43   63 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+22:33:43   64 DRAWING THE RETICLE
+22:33:43   64 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
+22:33:43   65 DRAWING THE RETICLE
+22:33:43   65 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:43   66 DRAWING THE RETICLE
+22:33:43   66 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:43   67 DRAWING THE RETICLE
+22:33:43   67 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:43   68 DRAWING THE RETICLE
+22:33:43   68 GameManager::run(): Can't keep up! frame_time 33 ms, split 53 ms
+22:33:43   69 DRAWING THE RETICLE
+22:33:43   69 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+22:33:43   70 DRAWING THE RETICLE
+22:33:43   70 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:43   71 DRAWING THE RETICLE
+22:33:43   71 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:43   72 DRAWING THE RETICLE
+22:33:43   72 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:43   73 DRAWING THE RETICLE
+22:33:43   73 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+22:33:43   74 DRAWING THE RETICLE
+22:33:43   74 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:43   75 DRAWING THE RETICLE
+22:33:43   75 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:43   76 DRAWING THE RETICLE
+22:33:43   76 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:43   77 DRAWING THE RETICLE
+22:33:43   77 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+22:33:43   78 DRAWING THE RETICLE
+22:33:43   78 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:43   79 DRAWING THE RETICLE
+22:33:43   79 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
+22:33:44   80 DRAWING THE RETICLE
+22:33:44   80 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:44   81 DRAWING THE RETICLE
+22:33:44   81 GameManager::run(): Can't keep up! frame_time 33 ms, split 57 ms
+22:33:44   82 DRAWING THE RETICLE
+22:33:44   82 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:44   83 DRAWING THE RETICLE
+22:33:44   83 GameManager::run(): Can't keep up! frame_time 33 ms, split 64 ms
+22:33:44   84 DRAWING THE RETICLE
+22:33:44   84 GameManager::run(): Can't keep up! frame_time 33 ms, split 56 ms
+22:33:44   85 DRAWING THE RETICLE
+22:33:44   85 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:44   86 DRAWING THE RETICLE
+22:33:44   86 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:44   87 DRAWING THE RETICLE
+22:33:44   87 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+22:33:44   88 DRAWING THE RETICLE
+22:33:44   88 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:44   89 DRAWING THE RETICLE
+22:33:44   89 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:44   90 DRAWING THE RETICLE
+22:33:44   90 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:44   91 DRAWING THE RETICLE
+22:33:44   91 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:44   92 DRAWING THE RETICLE
+22:33:44   92 GameManager::run(): Can't keep up! frame_time 33 ms, split 90 ms
+22:33:44   93 DRAWING THE RETICLE
+22:33:44   93 GameManager::run(): Can't keep up! frame_time 33 ms, split 74 ms
+22:33:44   94 DRAWING THE RETICLE
+22:33:44   94 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:44   95 DRAWING THE RETICLE
+22:33:44   95 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:44   96 DRAWING THE RETICLE
+22:33:44   96 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+22:33:45   97 DRAWING THE RETICLE
+22:33:45   97 GameManager::run(): Can't keep up! frame_time 33 ms, split 53 ms
+22:33:45   98 DRAWING THE RETICLE
+22:33:45   98 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:45   99 DRAWING THE RETICLE
+22:33:45   99 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:45  100 DRAWING THE RETICLE
+22:33:45  100 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:45  101 DRAWING THE RETICLE
+22:33:45  101 GameManager::run(): Can't keep up! frame_time 33 ms, split 64 ms
+22:33:45  102 DRAWING THE RETICLE
+22:33:45  102 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:45  103 DRAWING THE RETICLE
+22:33:45  103 GameManager::run(): Can't keep up! frame_time 33 ms, split 57 ms
+22:33:45  104 DRAWING THE RETICLE
+22:33:45  104 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
+22:33:45  105 DRAWING THE RETICLE
+22:33:45  105 GameManager::run(): Can't keep up! frame_time 33 ms, split 61 ms
+22:33:45  106 DRAWING THE RETICLE
+22:33:45  106 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:45  107 DRAWING THE RETICLE
+22:33:45  107 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:45  108 DRAWING THE RETICLE
+22:33:45  108 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:45  109 DRAWING THE RETICLE
+22:33:45  109 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:45  110 DRAWING THE RETICLE
+22:33:45  110 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:45  111 DRAWING THE RETICLE
+22:33:45  111 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:45  112 DRAWING THE RETICLE
+22:33:45  112 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:45  113 DRAWING THE RETICLE
+22:33:45  113 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:45  114 DRAWING THE RETICLE
+22:33:45  114 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:45  115 DRAWING THE RETICLE
+22:33:45  115 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:45  116 DRAWING THE RETICLE
+22:33:45  116 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+22:33:45  117 DRAWING THE RETICLE
+22:33:45  117 GameManager::run(): Can't keep up! frame_time 33 ms, split 57 ms
+22:33:46  118 DRAWING THE RETICLE
+22:33:46  118 GameManager::run(): Can't keep up! frame_time 33 ms, split 55 ms
+22:33:46  119 DRAWING THE RETICLE
+22:33:46  119 GameManager::run(): Can't keep up! frame_time 33 ms, split 58 ms
+22:33:46  120 DRAWING THE RETICLE
+22:33:46  120 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+22:33:46  121 DRAWING THE RETICLE
+22:33:46  121 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:46  122 DRAWING THE RETICLE
+22:33:46  122 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:46  123 DRAWING THE RETICLE
+22:33:46  123 GameManager::run(): Can't keep up! frame_time 33 ms, split 59 ms
+22:33:46  124 DRAWING THE RETICLE
+22:33:46  124 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+22:33:46  125 DRAWING THE RETICLE
+22:33:46  125 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:46  126 DRAWING THE RETICLE
+22:33:46  126 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:46  127 DRAWING THE RETICLE
+22:33:46  127 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:46  128 DRAWING THE RETICLE
+22:33:46  128 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:46  129 DRAWING THE RETICLE
+22:33:46  129 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:46  130 DRAWING THE RETICLE
+22:33:46  130 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+22:33:46  131 DRAWING THE RETICLE
+22:33:46  131 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
+22:33:46  132 DRAWING THE RETICLE
+22:33:46  132 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:46  133 DRAWING THE RETICLE
+22:33:46  133 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:46  134 DRAWING THE RETICLE
+22:33:46  134 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+22:33:46  135 DRAWING THE RETICLE
+22:33:46  135 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:46  136 DRAWING THE RETICLE
+22:33:46  136 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:46  137 DRAWING THE RETICLE
+22:33:46  137 GameManager::run(): Can't keep up! frame_time 33 ms, split 58 ms
+22:33:46  138 DRAWING THE RETICLE
+22:33:46  138 GameManager::run(): Can't keep up! frame_time 33 ms, split 55 ms
+22:33:46  139 DRAWING THE RETICLE
+22:33:47  139 GameManager::run(): Can't keep up! frame_time 33 ms, split 36 ms
+22:33:47  140 DRAWING THE RETICLE
+22:33:47  140 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:47  141 DRAWING THE RETICLE
+22:33:47  141 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:47  142 DRAWING THE RETICLE
+22:33:47  142 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:47  143 DRAWING THE RETICLE
+22:33:47  143 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:47  144 DRAWING THE RETICLE
+22:33:47  144 GameManager::run(): Can't keep up! frame_time 33 ms, split 55 ms
+22:33:47  145 DRAWING THE RETICLE
+22:33:47  145 GameManager::run(): Can't keep up! frame_time 33 ms, split 51 ms
+22:33:47  146 DRAWING THE RETICLE
+22:33:47  146 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:47  147 DRAWING THE RETICLE
+22:33:47  147 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+22:33:47  148 DRAWING THE RETICLE
+22:33:47  148 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:47  149 DRAWING THE RETICLE
+22:33:47  149 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:47  150 DRAWING THE RETICLE
+22:33:47  150 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:47  151 DRAWING THE RETICLE
+22:33:47  151 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
+22:33:47  152 DRAWING THE RETICLE
+22:33:47  152 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:47  153 DRAWING THE RETICLE
+22:33:47  153 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:47  154 DRAWING THE RETICLE
+22:33:47  154 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:47  155 DRAWING THE RETICLE
+22:33:47  155 GameManager::run(): Can't keep up! frame_time 33 ms, split 40 ms
+22:33:47  156 DRAWING THE RETICLE
+22:33:47  156 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:47  157 DRAWING THE RETICLE
+22:33:47  157 GameManager::run(): Can't keep up! frame_time 33 ms, split 49 ms
+22:33:47  158 DRAWING THE RETICLE
+22:33:47  158 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+22:33:47  159 DRAWING THE RETICLE
+22:33:47  159 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:48  160 DRAWING THE RETICLE
+22:33:48  160 GameManager::run(): Can't keep up! frame_time 33 ms, split 63 ms
+22:33:48  161 DRAWING THE RETICLE
+22:33:48  161 GameManager::run(): Can't keep up! frame_time 33 ms, split 66 ms
+22:33:48  162 DRAWING THE RETICLE
+22:33:48  162 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
+22:33:48  163 DRAWING THE RETICLE
+22:33:48  163 GameManager::run(): Can't keep up! frame_time 33 ms, split 56 ms
+22:33:48  164 DRAWING THE RETICLE
+22:33:48  164 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+22:33:48  165 DRAWING THE RETICLE
+22:33:48  165 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:48  166 DRAWING THE RETICLE
+22:33:48  166 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:48  167 DRAWING THE RETICLE
+22:33:48  167 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:48  168 DRAWING THE RETICLE
+22:33:48  168 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:48  169 DRAWING THE RETICLE
+22:33:48  169 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:48  170 DRAWING THE RETICLE
+22:33:48  170 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:48  171 DRAWING THE RETICLE
+22:33:48  171 GameManager::run(): Can't keep up! frame_time 33 ms, split 47 ms
+22:33:48  172 DRAWING THE RETICLE
+22:33:48  172 GameManager::run(): Can't keep up! frame_time 33 ms, split 58 ms
+22:33:48  173 DRAWING THE RETICLE
+22:33:48  173 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:48  174 DRAWING THE RETICLE
+22:33:48  174 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:48  175 DRAWING THE RETICLE
+22:33:48  175 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
+22:33:48  176 DRAWING THE RETICLE
+22:33:48  176 GameManager::run(): Can't keep up! frame_time 33 ms, split 50 ms
+22:33:48  177 DRAWING THE RETICLE
+22:33:48  177 GameManager::run(): Can't keep up! frame_time 33 ms, split 55 ms
+22:33:48  178 DRAWING THE RETICLE
+22:33:48  178 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+22:33:49  179 DRAWING THE RETICLE
+22:33:49  179 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:49  180 DRAWING THE RETICLE
+22:33:49  180 GameManager::run(): Can't keep up! frame_time 33 ms, split 57 ms
+22:33:49  181 DRAWING THE RETICLE
+22:33:49  181 GameManager::run(): Can't keep up! frame_time 33 ms, split 37 ms
+22:33:49  182 DRAWING THE RETICLE
+22:33:49  182 GameManager::run(): Can't keep up! frame_time 33 ms, split 38 ms
+22:33:49  183 DRAWING THE RETICLE
+22:33:49  183 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:49  184 DRAWING THE RETICLE
+22:33:49  184 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:49  185 DRAWING THE RETICLE
+22:33:49  185 GameManager::run(): Can't keep up! frame_time 33 ms, split 60 ms
+22:33:49  186 DRAWING THE RETICLE
+22:33:49  186 GameManager::run(): Can't keep up! frame_time 33 ms, split 45 ms
+22:33:49  187 DRAWING THE RETICLE
+22:33:49  187 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:49  188 DRAWING THE RETICLE
+22:33:49  188 GameManager::run(): Can't keep up! frame_time 33 ms, split 41 ms
+22:33:49  189 DRAWING THE RETICLE
+22:33:49  189 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+22:33:49  190 DRAWING THE RETICLE
+22:33:49  190 GameManager::run(): Can't keep up! frame_time 33 ms, split 55 ms
+22:33:49  191 DRAWING THE RETICLE
+22:33:49  191 GameManager::run(): Can't keep up! frame_time 33 ms, split 71 ms
+22:33:49  192 DRAWING THE RETICLE
+22:33:49  192 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:49  193 DRAWING THE RETICLE
+22:33:49  193 GameManager::run(): Can't keep up! frame_time 33 ms, split 42 ms
+22:33:49  194 DRAWING THE RETICLE
+22:33:49  194 GameManager::run(): Can't keep up! frame_time 33 ms, split 56 ms
+22:33:49  195 DRAWING THE RETICLE
+22:33:49  195 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
+22:33:49  196 DRAWING THE RETICLE
+22:33:49  196 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:49  197 DRAWING THE RETICLE
+22:33:49  197 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
+22:33:50  198 DRAWING THE RETICLE
+22:33:50  198 GameManager::run(): Can't keep up! frame_time 33 ms, split 68 ms
+22:33:50  199 DRAWING THE RETICLE
+22:33:50  199 GameManager::run(): Can't keep up! frame_time 33 ms, split 70 ms
+22:33:50  200 DRAWING THE RETICLE
+22:33:50  200 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:50  201 DRAWING THE RETICLE
+22:33:50  201 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
+22:33:50  202 DRAWING THE RETICLE
+22:33:50  202 GameManager::run(): Can't keep up! frame_time 33 ms, split 54 ms
+22:33:50  203 DRAWING THE RETICLE
+22:33:50  203 GameManager::run(): Can't keep up! frame_time 33 ms, split 39 ms
+22:33:50  204 DRAWING THE RETICLE
+22:33:50  204 GameManager::run(): Can't keep up! frame_time 33 ms, split 44 ms
+22:33:50  205 DRAWING THE RETICLE
+22:33:50  205 GameManager::run(): Can't keep up! frame_time 33 ms, split 46 ms
+22:33:50  206 DRAWING THE RETICLE
+22:33:50  206 GameManager::run(): Can't keep up! frame_time 33 ms, split 52 ms
+22:33:50  207 DRAWING THE RETICLE
+22:33:50  207 GameManager::run(): Can't keep up! frame_time 33 ms, split 48 ms
+22:33:50  208 DRAWING THE RETICLE
+22:33:50  208 GameManager::run(): Can't keep up! frame_time 33 ms, split 53 ms
+22:33:50  209 DRAWING THE RETICLE
+22:33:50  209 GameManager::run(): Can't keep up! frame_time 33 ms, split 65 ms
+22:33:50  210 DRAWING THE RETICLE
+22:33:50  210 GameManager::run(): Can't keep up! frame_time 33 ms, split 67 ms
+22:33:50  211 DRAWING THE RETICLE
+22:33:50  211 GameManager::run(): Can't keep up! frame_time 33 ms, split 62 ms
+22:33:50  212 DRAWING THE RETICLE
+22:33:50  212 GameManager::run(): Can't keep up! frame_time 33 ms, split 57 ms
+22:33:50  213 DRAWING THE RETICLE
+22:33:50  213 GameManager::run(): Can't keep up! frame_time 33 ms, split 64 ms
+22:33:50  214 DRAWING THE RETICLE
+22:33:50  214 GameManager::run(): Can't keep up! frame_time 33 ms, split 43 ms
+22:33:51  215 DRAWING THE RETICLE
+22:33:51  215 GameManager::run(): Can't keep up! frame_time 33 ms, split 296 ms
