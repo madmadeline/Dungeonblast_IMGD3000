@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Boss.cpp" />
     <ClCompile Include="..\Bullet.cpp" />
     <ClCompile Include="..\BulletPickup.cpp" />
     <ClCompile Include="..\DungeonHero.cpp" />
@@ -164,9 +165,11 @@
     <ClCompile Include="..\Goblin.cpp" />
     <ClCompile Include="..\HealthPickup.cpp" />
     <ClCompile Include="..\Map.cpp" />
+    <ClCompile Include="..\Reticle.cpp" />
     <ClCompile Include="..\StringEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Boss.h" />
     <ClInclude Include="..\Bullet.h" />
     <ClInclude Include="..\BulletPickup.h" />
     <ClInclude Include="..\DungeonHero.h" />
@@ -177,6 +180,7 @@
     <ClInclude Include="..\Goblin.h" />
     <ClInclude Include="..\HealthPickup.h" />
     <ClInclude Include="..\Map.h" />
+    <ClInclude Include="..\Reticle.h" />
     <ClInclude Include="..\StringEvent.h" />
   </ItemGroup>
   <ItemGroup>

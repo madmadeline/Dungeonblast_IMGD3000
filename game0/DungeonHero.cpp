@@ -14,7 +14,7 @@
 #include <ViewObject.h>
 #include "Equipped.h"
 #include "StringEvent.h"
-
+#include "Boss.h"
 
 //CONSTRUCTOR
 DungeonHero::DungeonHero() {
@@ -46,6 +46,11 @@ DungeonHero::DungeonHero() {
 	equipped = 0; //0 = gun
 				  //1 = magic
 	hasFireball = false; //true when fireball pickup is obtained
+	bossDrawn = false;
+
+	//mouse pointer
+	p_reticle = new Reticle();
+	p_reticle->draw();
 }
 
 //DESTRUCTOR
@@ -160,6 +165,12 @@ void DungeonHero::move(float dir){
 		return;	// overlaps, doesn't move, else continue
 	}
 
+	if (new_pos.getX() >= 94 && new_pos.getX() <= 98 && new_pos.getY() >= 23 && new_pos.getY() <= 40 && bossDrawn == false) {
+		//draw the boss and start the boss music
+		new Boss(35, 77);
+		bossDrawn = true;
+	}
+
 	if ((new_pos.getY() > -1) &&
 		(new_pos.getY() < WM.getBoundary().getVertical() - 1))
 		WM.moveObject(this, new_pos);
@@ -181,6 +192,12 @@ void DungeonHero::advance(int dir) {
 		checkDir = 2;
 	else
 		checkDir = -2;
+
+	if (new_pos.getX() >= 94 && new_pos.getX() <= 98 && new_pos.getY() >= 23 && new_pos.getY() <= 40 && bossDrawn == false) {
+		//draw the boss and start the boss music
+		new Boss(73, 25);
+		bossDrawn = true;
+	}
 
 	if (checkOverlapMap(this, new_pos, checkDir) == true) {
 		return;	// overlaps, doesn't move, else continue
