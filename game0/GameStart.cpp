@@ -81,7 +81,7 @@ void GameStart::start() {
 	vo_am->setValue(20);
 	vo_am->setColor(df::YELLOW);
 
-	Equipped eq;
+	new Equipped;
 
 
 	// TODO: SPAWN ENEMIES
