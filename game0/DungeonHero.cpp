@@ -29,7 +29,7 @@ DungeonHero::DungeonHero() {
 
 	//set init position
 	//df::Vector p(42, WM.getBoundary().getVertical() / 2);
-	df::Vector p(6, 43);
+	df::Vector p(6, 27);
 	setPosition(p);
 
 	//set init variables

@@ -17,7 +17,8 @@
 #include "Equipped.h"
 
 void loadResources(void) {
-    RM.loadSprite("Sprites/map2.txt", "MapTest");
+    //RM.loadSprite("Sprites/map2.txt", "MapTest");
+    RM.loadSprite("Sprites/map-test.txt", "MapTest");
     RM.loadSprite("Sprites/hero-spr.txt", "Hero");
     RM.loadSprite("Sprites/goblin-spr.txt", "Goblin");
 }
@@ -32,7 +33,7 @@ int main(int argc, char *argv[]) {
   }
   
   // setting world to be size of map sprite
-  WM.setBoundary(df::Box(df::Vector(0, 0), 98, 50));
+  WM.setBoundary(df::Box(df::Vector(0, 0), 60, 30));
   loadResources();
 
   // test map obj collisions
@@ -53,13 +54,15 @@ int main(int argc, char *argv[]) {
 
   // player
   DungeonHero* hero = new DungeonHero;
-  WM.setViewFollowing(hero);
+  //WM.setViewFollowing(hero);
 
   // some enemies
-  new Goblin(9, 32, 1);
+  /*new Goblin(9, 32, 1);
   new Goblin(21, 27, -1);
   new Goblin(34, 47, -2);
-  new Goblin(37, 39, 2);
+  new Goblin(37, 39, 2);*/
+  new Goblin(12, 5, -1);
+  new Goblin(12, 18, 2);
 
   // some pickups
   new BulletPickup(df::Vector(15, 33));
