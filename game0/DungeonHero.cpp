@@ -53,13 +53,10 @@ DungeonHero::DungeonHero() {
 	p_reticle = new Reticle();
 	p_reticle->draw();
 
-<<<<<<< HEAD
 	//play the background music
 	df::Music* p_music = RM.getMusic("BGM");
 	p_music->play();
-=======
 	moveSpriteTimer = 2;
->>>>>>> a9fb3b0a0c1c3d0d4d8699f0b672844c66f6e0e4
 }
 
 //DESTRUCTOR
