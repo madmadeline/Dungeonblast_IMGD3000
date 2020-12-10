@@ -21,7 +21,11 @@
 void loadResources(void) {
     //RM.loadSprite("Sprites/map2.txt", "MapTest");
     RM.loadSprite("Sprites/map-test.txt", "MapTest");
-    RM.loadSprite("Sprites/hero-spr.txt", "Hero");
+    //RM.loadSprite("Sprites/hero-spr.txt", "Hero");
+    RM.loadSprite("Sprites/hero-idle-fire.txt", "HeroIdleFire");
+    RM.loadSprite("Sprites/hero-idle-gun.txt", "HeroIdleGun");
+    RM.loadSprite("Sprites/hero-walking-fire.txt", "HeroWalkingFire");
+    RM.loadSprite("Sprites/hero-walking-gun.txt", "HeroWalkingGun");
     RM.loadSprite("Sprites/goblin-spr.txt", "Goblin");
 }
 
@@ -56,7 +60,7 @@ int main(int argc, char *argv[]) {
 
   // player
   DungeonHero* hero = new DungeonHero;
-  //WM.setViewFollowing(hero);
+  WM.setViewFollowing(hero);
 
   // some enemies
   /*new Goblin(9, 32, 1);
