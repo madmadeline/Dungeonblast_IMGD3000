@@ -78,21 +78,6 @@ int main(int argc, char *argv[]) {
   new FireballPickup(df::Vector(9, 38));
   new HealthPickup(df::Vector(21, 31));
 
-  //view objects
-  df::ViewObject* vo_hp = new df::ViewObject; //health counter
-  vo_hp->setLocation(df::TOP_LEFT);
-  vo_hp->setViewString("Health:");
-  vo_hp->setValue(100);
-  vo_hp->setColor(df::YELLOW);
-
-  df::ViewObject* vo_am = new df::ViewObject; //ammo counter
-  vo_am->setLocation(df::TOP_CENTER);
-  vo_am->setViewString("Ammo:");
-  vo_am->setValue(20);
-  vo_am->setColor(df::YELLOW);
-
-  Equipped eq;
-
   GM.run();
 
   // Shut everything down.
