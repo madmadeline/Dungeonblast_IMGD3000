@@ -159,6 +159,7 @@
     <ClCompile Include="..\BulletPickup.cpp" />
     <ClCompile Include="..\DungeonHero.cpp" />
     <ClCompile Include="..\Equipped.cpp" />
+    <ClCompile Include="..\EventPlayer.cpp" />
     <ClCompile Include="..\Fireball.cpp" />
     <ClCompile Include="..\FireballPickup.cpp" />
     <ClCompile Include="..\game.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="..\BulletPickup.h" />
     <ClInclude Include="..\DungeonHero.h" />
     <ClInclude Include="..\Equipped.h" />
+    <ClInclude Include="..\EventPlayer.h" />
     <ClInclude Include="..\Fireball.h" />
     <ClInclude Include="..\FireballPickup.h" />
     <ClInclude Include="..\GameOver.h" />

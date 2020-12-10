@@ -8,6 +8,8 @@
 #include "GameUtility.h"
 #include <iostream>
 #include <EventStep.h>
+#include "PlayerEvent.h"
+#include "Fireball.h"
 
 Boss::Boss(int x, int y) {
 	setType("Boss");
@@ -17,14 +19,18 @@ Boss::Boss(int x, int y) {
 
 	registerInterest(df::COLLISION_EVENT);
 	registerInterest(df::STEP_EVENT);
+	registerInterest(PLAYER_EVENT);
 	move_slowdown = 2;
 	move_countdown = move_slowdown;
+	fire_slowdown = 15;
+	fire_countdown = fire_slowdown;
 	hp = 100;
 	dir = 1; //controls the initial direction of the boss. 
 			   //1 = up
 			   //-1 = down
 			   //2 = left
 			   //-2 = right
+	target = df::Vector(0, 0);
 }
 
 int Boss::eventHandler(const df::Event* p_e) {
@@ -39,6 +45,13 @@ int Boss::eventHandler(const df::Event* p_e) {
 	if (p_e->getType() == df::STEP_EVENT) {
 		step();
 		return 1;
+	}
+
+	if (p_e->getType() == PLAYER_EVENT) {
+		//update the target
+		const PlayerEvent* p_player_event =
+			dynamic_cast <const PlayerEvent*> (p_e);
+		target = p_player_event->getPos();
 	}
 
 	return 0;
@@ -56,6 +69,27 @@ void Boss::step() {
 		move_countdown = 0;
 		move(dir);
 	}
+	//if the hero is in range, start firing.
+	if ((getPosition().getX() - target.getX()) <= 10) {
+		fire();
+	}
+}
+
+//FIRE
+void Boss::fire() {
+	//create a fireball and send it at the player
+	if (fire_countdown > 0)
+		return;
+	fire_countdown = fire_slowdown;
+
+	df::Vector v = target - getPosition();
+	v.normalize();
+	v.scale(1);
+	//magic equipped
+	df::Sound* p_sound = RM.getSound("Fireball");
+	p_sound->play();
+	Fireball* p = new Fireball(getPosition());
+	p->setVelocity(v);
 }
 
 // DRAW 
