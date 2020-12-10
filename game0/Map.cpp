@@ -1,7 +1,7 @@
 #include "Map.h"
 #include "WorldManager.h"
 #include "Utility.h"
-#include <PlayerEvent.h>
+#include "EventPlayer.h"
 
 Map::Map() {
 
@@ -29,6 +29,7 @@ int Map::eventHandler(const df::Event* p_e) {
 		player_pos = p_player_event->getPos();
 		return 1;
 	}
+	return 0;
 }
 
 int Map::draw() {
@@ -36,7 +37,7 @@ int Map::draw() {
 	int y_abs_max = getAnimation().getSprite()->getHeight();
 
 	df::Box window = WM.getBoundary();
-
+	return 0;
 }
 
 /*

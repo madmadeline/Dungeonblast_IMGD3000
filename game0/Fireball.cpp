@@ -34,6 +34,11 @@ void Fireball::collide(const df::EventCollision* p_c) {
 		((p_c->getObject2()->getType()) == "Boss")) {
 		WM.markForDelete(this);
 	}
+
+	if (((p_c->getObject1()->getType()) == "Hero") ||
+		((p_c->getObject2()->getType()) == "Hero")) {
+		WM.markForDelete(this);
+	}
 }
 
 

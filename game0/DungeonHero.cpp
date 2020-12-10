@@ -16,6 +16,7 @@
 #include "StringEvent.h"
 #include "Boss.h"
 #include "GameOver.h"
+#include "EventPlayer.h"
 
 //CONSTRUCTOR
 DungeonHero::DungeonHero() {
@@ -286,6 +287,11 @@ void DungeonHero::mouse(const df::EventMouse* p_mouse_event) {
 
 //STEP EVENT STUFF
 void DungeonHero::step(){
+
+	//send current position to interested objects
+	PlayerEvent p(getPosition());
+	WM.onEvent(&p);
+
 	move_countdown--;
 	if (move_countdown < 0) {
 		move_countdown = 0;
@@ -318,7 +324,7 @@ void DungeonHero::collide(const df::EventCollision* p_c) {
 		WM.onEvent(&ev);
 		if (hp <= 0) {
 			//game over
-			WM.markForDelete(this);
+			DungeonHero::~DungeonHero();
 		}
 	}
 	else if (((p_c->getObject1()->getType()) == "bulletPickup") ||
@@ -344,6 +350,26 @@ void DungeonHero::collide(const df::EventCollision* p_c) {
 		p_sound->play();
 		df::EventView ev("Health:", 20, true);
 		WM.onEvent(&ev);
+	}
+	else if (((p_c->getObject1()->getType()) == "Boss") ||
+		((p_c->getObject2()->getType()) == "Boss")) {
+		hp -= 20;
+		df::EventView ev("Health:", -20, true);
+		WM.onEvent(&ev);
+		if (hp <= 0) {
+			//game over
+			DungeonHero::~DungeonHero();
+		}
+	}
+	else if (((p_c->getObject1()->getType()) == "Fireball") ||
+		((p_c->getObject2()->getType()) == "Fireball")) {
+		hp -= 20;
+		df::EventView ev("Health:", -20, true);
+		WM.onEvent(&ev);
+		if (hp <= 0) {
+			//game over
+			DungeonHero::~DungeonHero();
+		}
 	}
 }
 
