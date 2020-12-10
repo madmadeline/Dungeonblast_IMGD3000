@@ -12,6 +12,7 @@
 #include "FireballPickup.h"
 #include "ViewObject.h"
 #include "HealthPickup.h"
+#include "Music.h"
 
 #include "WorldManager.h"
 #include "Equipped.h"
@@ -27,6 +28,16 @@ void loadResources(void) {
     RM.loadSprite("Sprites/hero-walking-fire.txt", "HeroWalkingFire");
     RM.loadSprite("Sprites/hero-walking-gun.txt", "HeroWalkingGun");
     RM.loadSprite("Sprites/goblin-spr.txt", "Goblin");
+    RM.loadSprite("Sprites/dragon-spr.txt", "Dragon");
+    RM.loadMusic("Sounds/BackgroundMusic.wav", "BGM");
+    RM.loadSound("Sounds/DragonRoar.wav", "Roar");
+    RM.loadSound("Sounds/EnemyDeath.wav", "Death");
+    RM.loadSound("Sounds/Fireball.wav", "Shoot");
+    RM.loadSound("Sounds/GameOver.wav", "Gameover");
+    RM.loadSound("Sounds/GameWin.wav", "Win");
+    RM.loadSound("Sounds/HealthPickup.wav", "Health");
+    RM.loadSound("Sounds/Iceball.wav", "Fireball");
+    RM.loadSound("Sounds/WeaponPickup.mp3", "Ammo");
 }
 
 int main(int argc, char *argv[]) {
@@ -46,7 +57,7 @@ int main(int argc, char *argv[]) {
   LM.setFlush(true);
 
   //boss
-  //new Boss(35,77); //put in the boss room, coords will change with new map config
+  new Boss(12, 5);
 
   // some pickups
   new BulletPickup(df::Vector(15, 33));
