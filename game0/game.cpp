@@ -15,6 +15,8 @@
 
 #include "WorldManager.h"
 #include "Equipped.h"
+#include "Boss.h"
+
 
 void loadResources(void) {
     RM.loadSprite("Sprites/map2.txt", "MapTest");
@@ -60,6 +62,9 @@ int main(int argc, char *argv[]) {
   new Goblin(21, 27, -1);
   new Goblin(34, 47, -2);
   new Goblin(37, 39, 2);
+
+  //boss
+  //new Boss(35,77); //put in the boss room, coords will change with new map config
 
   // some pickups
   new BulletPickup(df::Vector(15, 33));
