@@ -11,7 +11,7 @@
 #include "Boss.h"
 #include "FireballPickup.h"
 #include "HealthPickup.h"
-#include "HealthPickup.h"
+#include "BulletPickup.h"
 #include "Map.h"
 #include "Equipped.h"
 
@@ -23,8 +23,8 @@ GameStart::GameStart() {
 	setColor(df::YELLOW);
 
 	// Play start music
-	//p_music = RM.getMusic("start_music");
-	//playMusic();
+	p_music = RM.getMusic("BGM");
+	playMusic();
 
 	// Link to "gamestart" sprite
 	setSprite("gamestart");
@@ -87,8 +87,11 @@ void GameStart::start() {
 	// TODO: SPAWN ENEMIES
 	// INCLUDING BOSSES
 
+	new Boss(12, 5);
 
 
+	// some pickups
+	//
 
 	// When game starts, become inactive
 	setActive(false);

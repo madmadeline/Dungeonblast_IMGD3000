@@ -1,0 +1,14 @@
+<HEADER>
+frames 1
+width 9
+height 1
+color yellow
+slowdown 0
+</HEADER>
+<BODY>
+Game Over
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

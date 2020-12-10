@@ -15,6 +15,7 @@
 #include "Equipped.h"
 #include "StringEvent.h"
 #include "Boss.h"
+#include "GameOver.h"
 
 //CONSTRUCTOR
 DungeonHero::DungeonHero() {
@@ -30,7 +31,7 @@ DungeonHero::DungeonHero() {
 
 	//set init position
 	//df::Vector p(42, WM.getBoundary().getVertical() / 2);
-	df::Vector p(6, 27);
+	df::Vector p(6, 20);
 	setPosition(p);
 
 	//set init variables
@@ -61,9 +62,11 @@ DungeonHero::DungeonHero() {
 
 //DESTRUCTOR
 DungeonHero::~DungeonHero(){
-	df::Sound* p_sound = RM.getSound("Gameover");
-	p_sound->play();
-	GM.setGameOver(true);
+	// Create GameOver object
+	new GameOver;
+
+	// Mark Reticle for deletion
+	WM.markForDelete(p_reticle);
 }
 
 //EVENT HANDLER

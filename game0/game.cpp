@@ -17,6 +17,7 @@
 #include "WorldManager.h"
 #include "Equipped.h"
 #include "Boss.h"
+#include "GameStart.h"
 
 
 void loadResources(void) {
@@ -29,6 +30,10 @@ void loadResources(void) {
     RM.loadSprite("Sprites/hero-walking-gun.txt", "HeroWalkingGun");
     RM.loadSprite("Sprites/goblin-spr.txt", "Goblin");
     RM.loadSprite("Sprites/dragon-spr.txt", "Dragon");
+    RM.loadSprite("Sprites/gamestart-spr.txt", "gamestart");
+    RM.loadSprite("Sprites/gameover-spr.txt", "gameover");
+
+
     RM.loadMusic("Sounds/BackgroundMusic.wav", "BGM");
     RM.loadSound("Sounds/DragonRoar.wav", "Roar");
     RM.loadSound("Sounds/EnemyDeath.wav", "Death");
@@ -53,18 +58,14 @@ int main(int argc, char *argv[]) {
   WM.setBoundary(df::Box(df::Vector(0, 0), 60, 30));
   loadResources();
 
+  new GameStart();
+
+
+  GM.run();
+
   // Set flush of logfile during development (when done, make false).
   LM.setFlush(true);
 
-  //boss
-  new Boss(12, 5);
-
-  // some pickups
-  new BulletPickup(df::Vector(15, 33));
-  new FireballPickup(df::Vector(9, 38));
-  new HealthPickup(df::Vector(21, 31));
-
-  GM.run();
 
   // Shut everything down.
   GM.shutDown();

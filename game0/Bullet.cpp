@@ -31,6 +31,11 @@ void Bullet::collide(const df::EventCollision* p_c) {
 		((p_c->getObject2()->getType()) == "Goblin")) {
 		WM.markForDelete(this);
 	}
+
+	if (((p_c->getObject1()->getType()) == "Boss") ||
+		((p_c->getObject2()->getType()) == "Boss")) {
+		WM.markForDelete(this);
+	}
 }
 
 int Bullet::eventHandler(const df::Event* p_e) {

@@ -1,0 +1,16 @@
+<HEADER>
+frames 2
+width 30
+height 1
+color yellow
+slowdown 15
+</HEADER>
+<BODY>
+Press 'p' to play, 'q' to quit
+end
+                              
+end
+</BODY>
+<FOOTER>
+version 1
+</FOOTER>

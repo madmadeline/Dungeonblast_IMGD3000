@@ -24,6 +24,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>saucershoot</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>dungeonblast</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -161,6 +162,8 @@
     <ClCompile Include="..\Fireball.cpp" />
     <ClCompile Include="..\FireballPickup.cpp" />
     <ClCompile Include="..\game.cpp" />
+    <ClCompile Include="..\GameOver.cpp" />
+    <ClCompile Include="..\GameStart.cpp" />
     <ClCompile Include="..\GameUtility.cpp" />
     <ClCompile Include="..\Goblin.cpp" />
     <ClCompile Include="..\HealthPickup.cpp" />
@@ -176,6 +179,7 @@
     <ClInclude Include="..\Equipped.h" />
     <ClInclude Include="..\Fireball.h" />
     <ClInclude Include="..\FireballPickup.h" />
+    <ClInclude Include="..\GameOver.h" />
     <ClInclude Include="..\GameUtility.h" />
     <ClInclude Include="..\Goblin.h" />
     <ClInclude Include="..\HealthPickup.h" />

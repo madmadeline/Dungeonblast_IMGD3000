@@ -11,7 +11,7 @@
 
 Boss::Boss(int x, int y) {
 	setType("Boss");
-	setSprite("Goblin");
+	setSprite("Dragon");
 
 	setPosition(df::Vector(x, y));
 
