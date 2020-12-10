@@ -19,8 +19,8 @@ Boss::Boss(int x, int y) {
 	registerInterest(df::STEP_EVENT);
 	move_slowdown = 2;
 	move_countdown = move_slowdown;
-	hp = 12;
-	dir = 1; //controls the initial direction of the goblin. 
+	hp = 100;
+	dir = 1; //controls the initial direction of the boss. 
 			   //1 = up
 			   //-1 = down
 			   //2 = left

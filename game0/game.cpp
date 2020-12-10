@@ -60,6 +60,8 @@ int main(int argc, char *argv[]) {
 
   new GameStart();
 
+  //Equipped eq;
+
 
   GM.run();
 
