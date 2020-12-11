@@ -188,10 +188,6 @@
     <ClInclude Include="..\Map.h" />
     <ClInclude Include="..\Reticle.h" />
     <ClInclude Include="..\StringEvent.h" />
-    <ClInclude Include="PlayerEvent.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="PlayerEvent.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

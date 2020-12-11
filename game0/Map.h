@@ -8,14 +8,15 @@
 class Map : public df::Object {
 
 private:
-	Map();						// private since singleton
-	Map(Map const&);			// don't allow copy
-	void operator=(Map const&);	// don't allow assignment
+	//Map();						// private since singleton
+	//Map(Map const&);			// don't allow copy
+	//void operator=(Map const&);	// don't allow assignment
 	df::Vector player_pos;
 
 public:
 	// get the singleton instance of the Map
-	static Map& getInstance();
+	//static Map& getInstance();
+	Map();
 
 	~Map();
 

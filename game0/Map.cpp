@@ -16,12 +16,14 @@ Map::Map() {
 	setAltitude(0);
 
 	registerInterest(PLAYER_EVENT);
+
+	WM.insertObject(this);
 }
 
-Map& Map::getInstance() {
+/*Map& Map::getInstance() {
 	static Map map;
 	return map;
-}
+}*/
 
 Map::~Map() {
 }
@@ -58,16 +60,18 @@ int Map::draw() {
 	if (y_max >= y_abs_max)
 		y_max = y_abs_max - 1;
 
-	std::string map_str = GAME_MAP.getAnimation().getSprite()->getFrame(0).getString();
-	int map_w = GAME_MAP.getAnimation().getSprite()->getFrame(0).getWidth();
-	df::Color color = GAME_MAP.getAnimation().getSprite()->getColor();
+	std::string map_str = this->getAnimation().getSprite()->getFrame(0).getString();
+	int map_w = this->getAnimation().getSprite()->getFrame(0).getWidth();
+	df::Color color = this->getAnimation().getSprite()->getColor();
 
 	for (int i = x_min; i < x_max; i++) {
 		for (int j = y_min; j < y_max; j++) {
 			char c = map_str[i + (j * map_w)];
 			//df::Vector v = df::worldToView(df::Vector(i,j));
-			if (DM.drawCh(df::Vector(i, j+1), c, color) == -1)
-				LM.writeLog("MAP::DRAW() FAILED TO DRAW CHARACTER AT %d, %d", i, j);
+			if (c != ' ') {
+				if (DM.drawCh(df::Vector(i, j + 1), c, color) == -1)
+					LM.writeLog("MAP::DRAW() FAILED TO DRAW CHARACTER AT %d, %d", i, j);
+			}
 		}
 	}
 	return 1;

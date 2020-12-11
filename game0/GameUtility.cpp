@@ -26,9 +26,21 @@ bool checkOverlapMap(df::Object* p_o, df::Vector new_pos, int dir) {
 		box_x = (int)floorf(new_pos.getX());
 	else if (dir == -2)
 		box_x = (int)ceilf(new_pos.getX());*/
+	df::Object* p_map = NULL;
+	df::ObjectList object_list = WM.getAllObjects(true);
+	df::ObjectListIterator i(&object_list);
+	for (i.first(); !i.isDone(); i.next()) {
+		df::Object* p_o = i.currentObject();
+		if (p_o->getType() == "Map") {
+			p_map = p_o;
+			continue;
+		}
+	}
+	if (p_map == NULL)
+		return true;
 
-	std::string map_str = GAME_MAP.getAnimation().getSprite()->getFrame(0).getString();
-	int map_w = GAME_MAP.getAnimation().getSprite()->getFrame(0).getWidth();
+	std::string map_str = p_map->getAnimation().getSprite()->getFrame(0).getString();
+	int map_w = p_map->getAnimation().getSprite()->getFrame(0).getWidth();
 
 	for (int i = box_x; i < (box_x + box_w); i++) {
 		for (int j = box_y - 1; j < (box_y + box_h - 1); j++) {

@@ -62,7 +62,7 @@ void GameStart::start() {
 	p_music->pause();
 
 	// get map
-	GAME_MAP.getInstance();
+	new Map;
 
 	// Spawn player
 	DungeonHero* hero = new DungeonHero;

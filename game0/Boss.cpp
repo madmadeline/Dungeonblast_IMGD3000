@@ -22,9 +22,9 @@ Boss::Boss(int x, int y) {
 	registerInterest(PLAYER_EVENT);
 	move_slowdown = 2;
 	move_countdown = move_slowdown;
-	fire_slowdown = 15;
+	fire_slowdown = 60;
 	fire_countdown = fire_slowdown;
-	hp = 100;
+	hp = 50;
 	dir = 1; //controls the initial direction of the boss. 
 			   //1 = up
 			   //-1 = down
@@ -70,9 +70,13 @@ void Boss::step() {
 		move(dir);
 	}
 	//if the hero is in range, start firing.
-	if ((getPosition().getX() - target.getX()) <= 10) {
+	fire_countdown--;
+	if ((getPosition().getX() - target.getX()) <= 10 &&
+		(target.getX() - getPosition().getX()) >= 0 &&
+		(getPosition().getY() - target.getY()) <= 10) {
 		fire();
 	}
+
 }
 
 //FIRE
@@ -88,7 +92,9 @@ void Boss::fire() {
 	//magic equipped
 	df::Sound* p_sound = RM.getSound("Fireball");
 	p_sound->play();
-	Fireball* p = new Fireball(getPosition());
+	df::Vector fire_pos = getPosition();
+	fire_pos.setX(getPosition().getX() + 5);
+	Fireball* p = new Fireball(fire_pos);
 	p->setVelocity(v);
 }
 

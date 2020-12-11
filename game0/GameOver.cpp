@@ -18,8 +18,7 @@ GameOver::GameOver() {
 
 	// Link to "message" sprite
 	if (setSprite("gameover") == 0)
-		time_to_live = getAnimation().getSprite()->getFrameCount() *
-		getAnimation().getSprite()->getSlowdown();
+		time_to_live = 100;
 	else
 		time_to_live = 0;
 
