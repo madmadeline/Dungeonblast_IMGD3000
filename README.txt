@@ -4,6 +4,8 @@ DUNGEONBLAST
 a game by:
 Ryan Darcey (rtdarcey@wpi.edu)
 Madeline Perry (mmperry@wpi.edu)
+
+Trailer: https://youtu.be/YDCGeJ1q4Rc
 ==================================================
 HOW TO PLAY:
 
